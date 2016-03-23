@@ -1,0 +1,45 @@
+<!-- BEGIN: main -->
+<section>
+    <div class="container wrap-content">
+        <div class="home-content" id="content">
+            <div id="home-blog-list">
+                <h1 class="title-section">
+                    <a href="javascript:void(0)">Blog ẩm thực</a><i class="fa fa-angle-right"></i>
+                </h1>
+                <!-- BEGIN: blog -->
+                <div class="row blog-list">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <a class="thumb" href="{link}"><img alt="{title}" class="img-responsive" src="{img}"  />
+                        </a>
+                    </div>
+                    <div class="col-md-6 des">
+                        <h3 class="title-item txt-primary">
+                            <a href="{link}">{title}</a>
+                        </h3>
+                        <p>{brief}</p>
+                        <div class="author">
+                            <img src="{author_avatar}" alt="{author_fullname}" width="50"/>
+                            <h4><a href="{author_fullname}">{author_fullname}</a></h4>
+                            <span class="view"><i class="fa fa-heart-o"></i>{author_point}</span>
+                            <span class="view"><i class="fa fa-pencil-square-o"></i>{author_recipe_post}</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="break-line"></div>
+                <!-- END: blog -->
+                <div class="break-line"></div>
+                {paging}
+            </div>
+        </div><!-- end content -->
+        <div id="sidebar">
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+<!-- END: main -->

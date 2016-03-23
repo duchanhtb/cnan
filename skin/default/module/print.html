@@ -1,0 +1,71 @@
+<!-- BEGIN: main -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="stylesheet" href="{skin_path}asset/css/style.css" media="all" />
+        <link rel="stylesheet" href="{skin_path}asset/css/print.css" media="all">
+    </head>
+
+    <body>
+        <div id="print_page">
+
+            <div class="header_page">
+                <div class="header_left_logo left" style="border-bottom: 1px solid #ccc; margin-bottom: 20px">
+                    <a href="{link_home}" title="CachNauAnNgon"><img src="{skin_path}asset/images/logo.png" alt="Cách Nấu Ăn Ngon" width="160" /></a>
+                    <div class="header_right_print right">
+                        <a href="javascript:;" onclick="return window.print();" title=""><img href="http://st.f1.vnecdn.net/responsive/i/v21/graphics/icon_print.gif"><span>In trang</span> (Ctr + P)</a>
+                    </div> 
+                </div><!-- end header_left_logo -->
+
+
+            </div>   
+            <div id="recipe-detail" itemscope itemtype="http://schema.org/Recipe">
+                <div id="recipe-print-content">
+                    <div class="recipe-top">
+                        <h1 class="recipe-title" itemprop="name">{title}{edit_link}</h1>
+                        <p itemprop="description">{brief}</p>
+                        {recipe_info}
+                    </div>
+                    <div class="none">
+                        <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                            <span itemprop="ratingValue">4.0</span> stars based on
+                            <span itemprop="reviewCount">{fix_rand}</span> reviews 
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- BEGIN: ingridient -->
+                    <div class="recipe-content" style="margin-top: 0px;">
+                        <h3 class="title-section">Thành phần nguyên liệu</h3>
+                        <ul style="padding: 0">
+                            <!-- BEGIN: ingridient_detail -->
+                            <li>
+                                <div class="recipe-inden">
+                                    <h3>
+                                    <span>{ingridient_order}</span>
+                                    <a title="{ingridient_name}" href="{ingridient_link}" style="text-decoration: none" class="fn-name" itemprop="ingredients">{ingridient_name}</a>
+                                    <span class="inline ellipsis unit" title="{ingridient_value}">
+                                        {ingridient_value}
+                                    </span>
+                                    </h3>
+                                </div>
+                            </li>
+                            <!-- END: ingridient_detail -->
+                        </ul>
+                    </div>
+                    <!-- END: ingridient -->
+
+                    <h3 class="title-section" style="margin-top: 30px; margin-bottom: 10px">{title_content}</h3>
+                    <div class="has-colorbox">
+                        {intruction}
+                    </div>
+                </div>
+            </div>
+            <!-- end main_content_details -->
+        </div> <!-- end print page -->       
+    </body>
+    <script> 
+        window.print();
+    </script>    
+</html>
+<!-- END: main -->

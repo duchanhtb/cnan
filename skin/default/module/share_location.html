@@ -1,0 +1,136 @@
+<!-- BEGIN: main -->
+<div class="container" id="post-form">
+    <h2 class="heading">Chia sẻ địa điểm ăn ngon</h2>
+    <div class="wrap-post">
+        <p class="rule">Những thông tin có dấu    <strong style="font-size: 18px; padding: 0 5px;" class="red">*</strong>là bắt buộc nhập</p>
+        <form name="post-form" id="frm" method="post" data-action="post_locate">
+            <input type="hidden" name="locate_id" id="post-id" value="{locate_id}" />
+            <div class="error red none msg-locate_name">Bạn cần nhập tên địa điểm để tiếp tục</div>
+            <div class="post-row post-input title">
+                <input type="text" class="must-set" name="locate_name" value="{locate_name}" placeholder="Tên địa điểm ăn ngon" />
+                <em class="require_icon red">*</em>
+            </div>
+            <div class="post-row">
+                <div class="error red none msg-locate_img">Bạn cần nhập ảnh món ăn</div>
+                <div class="post-input title" style="margin-bottom: 2px;">
+                    <input type="text" class="image-url must-set" name="locate_img" value="{img}" placeholder="Pate link ảnh vào đây" />
+                    <em class="require_icon red">*</em>
+                </div>
+                <div id="post-images" class="input-image" data-type="locate">
+                    <img id="img-preview" src="{src_img}" />
+                    <div class="button">
+                        <span style="color: #333;">Hoặc </span><br />
+                        <a href="#" class="btnUpload">Chọn ảnh</a><br />
+                        <span class="lblUpload" style="color: #333; font-weight: normal;"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clear break"></div>
+            <div class="post-row">
+                <label>Giới thiệu:<em class="require">*</em></label>
+                <div class="error red none msg-locate_intro">Bạn cần nhập nội dung để tiếp tục</div>
+                <textarea style="width: 100%;" rows="5" name="locate_brief">{brief}</textarea>
+            </div>
+            <div class="post-row">
+                <label>Nội dung:<em class="require">*</em></label>
+                <div class="error red none msg-content">Bạn cần nhập nội dung để tiếp tục</div>
+                <textarea name="content" class="must-set editor" style="width: 100%;" rows="40" id="editor">{content}</textarea>
+            </div>
+            <div class="clear break"></div>
+            <div class="post-row title">
+                <label>Địa chỉ: <em style="font-size: 12px;" class="tip">(Gõ địa chỉ vào ô bên dưới để tìm kiếm)</em></label>
+                <div class="post-input">
+                    <input id="map-address" class="must-set" type="text" name="address" value="{address}" placeholder="Nhập địa chỉ" />
+                </div>
+            </div>
+            <div class="post-row row">
+                <div class="col-md-4">
+                    <label>Kinh độ</label>
+                    <div class="post-input" style="width: 100%;">
+                        <input type="text" name="latitude" id="map-latitude" value="{latitude}" />
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label>Vĩ độ</label>
+                    <div class="post-input" style="width: 100%;">
+                        <input type="text" name="longitude" id="map-longitude" value="{longitude}" />
+                    </div>
+                </div>
+            </div>
+            <div class="post-row">
+                <div><em class="tip">Tip: Kéo và thả địa <img src="{skin_path}asset/images/location.png" style="height: 30px;" alt="location" />chỉ cho phù hợp với địa điểm của bạn</em></div>
+                <div id="map-content" style="width: 100%; height: 500px;"></div>
+            </div>
+            <div class="clear break"></div>
+            <div class="post-row">
+                <label class="w100">Số ĐT:</label>
+                <div style="margin-bottom: 0 !important;" class="post-input w300">
+                    <input type="text" placeholder="Ví dụ: 098.888.888" name="phone" value="{phone}">
+                </div>
+            </div>
+            <div class="post-row">
+                <label class="w100">Email:</label>
+                <div style="margin-bottom: 0 !important;" class="post-input w300">
+                    <input type="text"  placeholder="Ví dụ: tencuahang@gmail.com" name="email" value="{email}">
+                </div>
+            </div>
+            <div class="post-row">
+                <label class="w100">Facebook:</label>
+                <div style="margin-bottom: 0 !important;" class="post-input w300">
+                    <input type="text" placeholder="Ví dụ: fb.com/tracahathanh" name="facebook" value="{facebook}">
+                </div>
+            </div>
+            <div class="post-row">
+                <label class="w100">Website:</label>
+                <div style="margin-bottom: 0 !important;" class="post-input w300">
+                    <input type="text" placeholder="Ví dụ: http://buntrahanoi.vn" name="website" value="{website}">
+                </div>
+            </div>
+            <div class="clear break"></div>
+            <div class="post-row" id="recipe-gallery">
+                <h2 style="font-size: 20px; font-weight: 400;">Thêm bộ sưu tập ảnh cho món ăn này?</h2>
+                <ul id="thumbnails" data-type="locate">
+                    <li>
+                        <div id="drop"><a>Chọn ảnh</a>
+                            <input type="file" multiple="" name="userfile">
+                        </div>
+                    </li>
+                    <!-- BEGIN: locate_image -->
+                    <li id="image-{img_id}">
+                        <img width="120" height="120" src="{img_src}">
+                        <div class="rwmb-image-bar">
+                            <a href="javascript:void(0)" class="rwmb-delete-file" onclick="deleteImages({img_id}, 'locate')">×</a>
+                        </div>
+                    </li>
+                    <!-- END: locate_image -->
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="clear break"></div>
+            <div class="button" id="button-post">
+                <a href="javascript:void(0)" onclick="submitForm('#frm')">Đăng</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="cnan-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Cách nấu ăn ngon</h4>
+      </div>
+      <div class="modal-body">
+        <p class="cnan-content center">Đang xử lý...</p>
+        <p class="center"><img id="img-status" src="{skin_path}asset/images/ajax-loader.gif"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- END: main -->

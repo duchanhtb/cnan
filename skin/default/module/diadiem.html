@@ -1,0 +1,122 @@
+<!-- BEGIN: main -->
+<section>        
+    <div class="container wrap-content">
+        <div id="content" class="detail-content">
+            <div id="recipe-detail" itemscope itemtype="http://schema.org/Recipe">
+                <div id="recipe-print-content">
+                    <!-- BEGIN: map -->
+                    <div class="recipe-top">
+                        <h2 class="title-section">Bản đồ</h2>
+                        <div class="gmap" id="gmap" data-address="Test address" data-lat="{latitude}" data-lng="{longitude}" data-zoom="14" data-marker="true" data-info="Hanh Nguyen" data-open_info="" data-height="300px" style="height:300px; margin-bottom: 40px;"></div>
+                    </div>
+                    <!-- END: map -->
+                    {html_info}
+                    <div class="clear"></div>
+                    <h1 class="title-section" itemprop="name">{name}{edit_link}</h1>
+                    <div class="recipe-introduction has-colorbox" itemprop="recipeInstructions">
+                        {content}
+                        <!-- BEGIN: gallery -->
+                        <div id="gallery">
+                            <h3 class="title-section">Hình Ảnh</h3>
+                            <div class="row">
+                                <!-- BEGIN: detail -->
+                                <div class="col-md-4 col-sm-6 col-xs-12 thumb">
+                                    <a href="{gallery_img_full}" class="colorbox"><img class="img-responsive" src="{gallery_img}" alt="{gallery_alt}" /></a>
+                                </div>
+                                <!-- END: detail -->
+                            </div>
+                        </div>
+                        <!-- END: gallery -->
+
+                        <div class="report">
+                            <a href="javascript:void(0)" class="fn-report">Báo lỗi nội dung</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <time class="none" datetime="{day_publish}" itemprop="datePublished">{day_publish_txt}</time>
+                    <div class="none">
+                        <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                            <span itemprop="ratingValue">4.0</span> stars based on
+                            <span itemprop="reviewCount">{fix_rand}</span> reviews 
+                        </span>
+                    </div>
+                </div>
+
+                <div id="recipe-share" class="box-share">
+                    <ul>
+                        <li class="print"><a href="https://www.printfriendly.com/print/?source=homepage&url={current_page}" target="_blank"><i class="fa fa-print"></i>In</a></li>
+                        <li class="facebook"><a class="fn-sharelink" data-net="fb" data-title="{name}" href="{current_page}"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twitter"><a class="fn-sharelink" data-net="tw" data-title="{name}" href="{current_page}"><i class="fa fa-twitter"></i></a></li>
+                        <li class="google-plus"><a class="fn-sharelink" data-net="gp" data-title="{name}" href="{current_page}"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="about-author box-author" style="margin-top: 40px;">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3 col-xs-4">
+                            <a href="{author_link}"><img class="img-responsive" src="{author_img}" alt="{author_fullname}" /></a>
+                        </div>
+                        <div class="col-md-10 col-sm-9 col-xs-8">
+                            <h3 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{author_link}" itemprop="name">{author_fullname}</a></h3>
+                            {author_info}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="home-recipe-grid">
+                    <h1 class="title-section"><a href="">Địa điểm khác</a><i class="fa fa-angle-right"></i></h1>
+                    <div class="row">
+                        <!-- BEGIN: other -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 locate-grid">
+                            <a class="thumb" href="{other_link}">
+                                <img alt="{other_title}" src="{other_img}" class="img-responsive">
+                                <div class="icon-view"><i class="fa fa-angle-double-right"></i></div>
+                                <div class="des">
+                                    <h3 class="title-item txt-primary">{other_name}</h3>
+                                    <div class="author ellipsis"><h4>Add: {other_address}</h4></div>
+                                </div>
+                                {html_province}
+                                <span class="item-mask"></span>
+                            </a>
+                        </div>
+                        <!-- END: other -->
+                    </div>
+                </div>
+
+                <h3 class="title-section" style="margin-top: 40px;">Bình luận</h3>
+                <div class="fb-comments" data-href="{current_page}" data-width="100%" data-numposts="6" data-colorscheme="light"></div>
+
+            </div>
+        </div>
+
+        <div id="sidebar">
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+            
+            {facebook}
+            
+        </div> <!-- end side bar -->
+
+    </div>
+</section>
+<div class="overlay" id="error-reporting">
+    <div class="box-popup no-padding">
+        <form style="position: relative;" id="error-reporting-form" data-error-report="locate_error_report">
+            <input type="hidden" value="{locate_id}" name="report-id" id="report-id" />
+            <div class="wrap-login">
+                <h3 class="heading">Thông báo lỗi</h3>
+                <p class="sucsess" id="report-msg" style="display: none;">Cảm ơn bạn đã gửi thông báo <br /> cho chúng tôi</p>
+                {html_email_report}
+                <div class="post-input">
+                    <textarea name="content" id="report-content" placeholder="Nội dung"></textarea>
+                </div>
+            </div>
+            <button style="">Gửi</button>
+            <div class="close fn-close">&times;</div>
+        </form>
+    </div>
+</div>
+<!-- END: main -->

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="vi" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta charset="UTF-8" />
+<title>Trang bạn yêu cầu không tồn tại!</title>
+<base href="http://hoamuop.com/" />
+<link href="http://hoamuop.com/image/data/logo.jpg" rel="icon" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rauxanh/stylesheet/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rauxanh/stylesheet/menu.css" />
+
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="catalog/view/plugins/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/plugins/fancybox/jquery.fancybox.css" />
+
+
+<!--[if IE 7]> 
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie6.css" />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61196238-1', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+<body>
+<div id="container">
+<div id="top">
+	<div id="hotline">Giao hàng tận nơi <strong>0909 606 197</strong> </div><!--end #hotline-->
+     
+    <div id="top_notification">
+    
+    
+    
+
+
+<div id="notification"></div>
+
+</div><!--end #top_notification-->
+     <div id="cart">
+  <div class="heading">
+    <h4><a href="http://hoamuop.com/index.php?route=checkout/cart">Giỏ Hàng</a></h4>
+     
+  
+  </div>
+</div>    <div id="top_account">
+          <a href="http://hoamuop.com/index.php?route=account/register">Đăng ký</a> <a href="http://hoamuop.com/index.php?route=account/login">Đăng Nhập</a>        </div>
+   
+    <div class="clear"></div>
+</div><!--end #top-->
+<div id="header">
+
+    <div id="logo"><a href="http://hoamuop.com/"><img src="http://hoamuop.com/image/data/theme/logo.png" title="Cửa hàng Nông Thủy Sản Sạch Hoa Mướp" alt="Cửa hàng Nông Thủy Sản Sạch Hoa Mướp" /></a></div>
+    
+     
+  <style>ul.nav{ display:none}#nav:hover ul.nav{ display:block}</style>
+
+<div id="nav" class="menu">
+ <div class="heading_menu">Danh mục sản phẩm</div>
+<ul class="nav megamenu"><li class="">
+					<a href="http://hoamuop.com/hoa-qua-sach"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-2.png') no-repeat;"><span class="menu-title">Hoa quả sạch</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/rau-cu"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-1.png') no-repeat;"><span class="menu-title">Rau củ sạch</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/cua-ca-mau"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/anh cua 2.png') no-repeat;"><span class="menu-title">Cua Cà Mau</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/thuy-hai-san"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-4.png') no-repeat;"><span class="menu-title">Thủy hải sản</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/thit-huu-co"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-5.png') no-repeat;"><span class="menu-title">Thịt hữu cơ</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/gao-do-kho"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-6.png') no-repeat;"><span class="menu-title">Gạo và đồ khô</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/gia-vi"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-7.png') no-repeat;"><span class="menu-title">Gia vị</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/thuc-pham-bo"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-8.png') no-repeat;"><span class="menu-title">Thực phẩm bổ</span></span></a></li><li class="">
+					<a href="http://hoamuop.com/bep-hoa-muop"><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-9.png') no-repeat;"><span class="menu-title">Bếp Hoa Mướp</span></span></a></li><li class="">
+					<a href=""><span class="menu-icon" style="background:url('http://hoamuop.com/image/data/menu/menu-icon-8.png') no-repeat;"><span class="menu-title">Danh mục mới</span></span></a></li></ul> 
+</div>  	<div id="menu_top">
+	   <ul>
+	<li>
+		<a href="http://hoamuop.com">Trang chủ</a></li>
+	<li>
+		<a href="http://hoamuop.com/gioi-thieu">Giới thiệu</a></li>
+	<li>
+		<a href="http://hoamuop.com/huong-dan-mua-hang">Hướng dẫn mua hàng</a></li>
+	<li>
+		<a href="http://hoamuop.com/index.php?route=pavblog/blogs">Tin tức</a></li>
+	<li>
+		<a href="http://hoamuop.com/blog">Blog</a></li>
+</ul>
+  </div>
+ <div id="bannerheader_top" class="banner">
+      <div><img src="image/data/banner/header-hoa-muop.jpg" alt="Banner Header" title="Banner Header" /></div>
+    </div>
+<script type="text/javascript"><!--
+$(document).ready(function() {
+	$('#bannerheader_top div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	$('#bannerheader_top').cycle({
+		before: function(current, next) {
+			$(next).parent().height($(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script>   
+  
+ </div>
+ 
+ 
+<div id="content">  <div class="breadcrumb">
+        <a href="http://hoamuop.com/index.php?route=common/home">Trang chủ</a>
+         &raquo; <a href="http://hoamuop.com/index.php?route=error/not_found">Trang bạn yêu cầu không tồn tại!</a>
+      </div>
+  <h1>Trang bạn yêu cầu không tồn tại!</h1>
+  <div class="content">Trang bạn yêu cầu không tồn tại!</div>
+  <div class="buttons">
+    <div class="right"><a href="http://hoamuop.com/index.php?route=common/home" class="button">Tiếp tục</a></div>
+  </div>
+  </div>
+</div>
+<div id="footer">
+<div class="container" style="padding-bottom:40px">
+  <div class="column column_social">
+    <h3>Kết nối Hoa Mướp </h3>
+   <p><iframe style="border: none; overflow: hidden; height: 258px;" src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/hoamuopfood &amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true" frameborder="0" scrolling="no" width="285" height="240"></iframe></p>  
+  </div>
+  <div class="column">
+    <h3>HOA MƯỚP </h3>
+    <ul>
+            <li><a title="Chứng chỉ sạch" href="http://hoamuop.com/chung-chi-sach">Chứng chỉ sạch</a></li>
+            <li><a title="Giới thiệu" href="http://hoamuop.com/gioi-thieu">Giới thiệu</a></li>
+            <li><a title="Gói thành viên" href="http://hoamuop.com/goi-thanh-vien">Gói thành viên</a></li>
+            <li><a title="Tìm hiểu nhà mướp" href="http://hoamuop.com/tim-hieu-nha-muop">Tìm hiểu nhà mướp</a></li>
+            <li><a title="Hướng dẫn mua hàng" href="http://hoamuop.com/huong-dan-mua-hang">Hướng dẫn mua hàng</a></li>
+            <li><a title="Phí giao hàng" href="http://hoamuop.com/phi-giao-hang">Phí giao hàng</a></li>
+            <li><a title="Chính sách đổi trả hàng" href="http://hoamuop.com/doi-tra-hang">Chính sách đổi trả hàng</a></li>
+            <li><a title="Cam kết chất lượng" href="http://hoamuop.com/cam-ket-chat-luong">Cam kết chất lượng</a></li>
+            <li><a href="index.php?route=pavblog/blogs" title="Tin tức">Tin tức</a></li>
+      <li><a href="http://hoamuop.com/index.php?route=information/contact" title="Liên hệ">Liên hệ</a></li>
+    </ul>
+  </div>
+  
+  <div class="column" style="width:52%">
+    <h3>HƯỚNG DẪN MUA HÀNG </h3>
+    <div class="footer_buy">
+   <p>
+	Hướng dẫn chi tiết mua hàng HoaMuop.com</p>
+ </div>
+    
+  </div>
+  
+  
+  
+  
+ <div class="clear"></div>
+</div>
+
+<div id="powered">
+<div class="container">
+<div class="logo_footer">
+<img src="http://hoamuop.com//image/data/theme/logo_ft.png" />
+</div><!--end .logo_footer-->
+<div class="footer_copyright"><p>
+	Bản quyền © 2014<br />
+	<strong>Thủy Hải Sản Tự Nhiên, Rau Củ Quả Hữu Cơ, Thịt Heo Bò, Gà Vịt Sạch</strong>...<br />
+	<strong>Cam kết cung cấp sản phẩm an toàn cho sức khỏe cộng đồng</strong></p>
+</div>
+<div class="footer_contact"><p>
+	<strong>CỬA HÀNG NÔNG THỦY SẢN SẠCH HOA MƯỚP</strong><br />
+	Địa chỉ: 186 Hoàng Hoa Thám, Phường 12, Quận Tân Bình, TP.HCM<br />
+	Điện thoại: 0909 606 197, Email: hoamuop01@gmail.com</p>
+</div>
+<div class="clear"></div>
+</div></div>
+</div>
+<a href="#" id="goTop"></a>
+</body></html>

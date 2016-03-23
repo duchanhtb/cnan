@@ -1,0 +1,123 @@
+<!-- BEGIN: main -->
+<session>
+    <div class="container wrap-content">
+        <div id="content" class="home-content">
+            <div class="section" id="home-slider" style="margin-top: 0;">
+                <ul class="pgwSlider">
+                    <!-- BEGIN: slide -->    
+                    <li>
+                        <a href="{slide_link}">
+                        <img src="{slide_img}" alt="{slide_name}">
+                        <span>{slide_name}</span>
+                        </a>
+                    </li>
+                    <!-- END: slide -->
+                </ul>
+            </div> <!-- end slide -->
+
+            <div class="section" id="home-recipe-grid">
+                <h1 class="title-section"><a href="{link_mon_ngon_moi_nhat}">Món ngon mới nhất</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    <!-- BEGIN: recipe_new -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 recipe-grid">
+                        <a class="thumb" href="{recipe_new_link}">
+                            <img alt="{recipe_new_name}" src="{recipe_new_img}" class="img-responsive" />
+                            <div class="icon-view"><i class="fa fa-angle-double-right"></i></div>
+                            <div class="des">
+                                <h3 class="title-item txt-primary ellipsis">{recipe_new_name}</h3>
+                                <div class="author ellipsis"><h4>{recipe_new_author}</h4></div>
+                            </div>
+                            <span class="item-mask"></span>
+                        </a>
+                    </div>
+                    <!-- END: recipe_new -->
+                </div>
+                <a class="fr" href="{link_mon_ngon_moi_nhat}">Xem thêm &#8594;</a>
+            </div> <!-- end recipe grid -->
+
+            <div class="section" id="home-recipe-list">
+                <h1 class="title-section"><a href="{link_an_yeu_thich_nhat}">Món ăn được yêu thích nhất</a><i class="fa fa-angle-right"></i></h1>
+
+                <!-- BEGIN: recipe_like -->
+                <div class="row recipe-list">
+                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                        <a href="{recipe_like_link}" class="thumb">
+                            <img class="img-responsive" src="{recipe_like_img}" alt="{recipe_like_name}" title="{recipe_like_name}" />
+                            {recipe_like_cooking_time}
+                        </a>
+                    </div>
+                    <div class="col-md-8 des">
+                        <h3 class="title-item txt-primary"><a href="{recipe_like_link}">{recipe_like_name}</a></h3>
+                        <p>{recipe_like_intruction}</p>
+                        <div class="author">
+                            <h4>
+                                <a href="{recipe_like_author_link}">{recipe_like_author}<span class="view"><i class="fa fa-heart-o"></i>{recipe_like_point}</span></a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="break-line"></div>
+                <!-- END: recipe_like -->
+                <a class="fr" href="{link_an_yeu_thich_nhat}">Xem thêm &#8594;</a>
+                <div class="clearfix"></div>
+            </div> <!-- end recipe list -->
+
+            <div class="section"  id="home-recipe-topuser">
+                <h1 class="title-section"><a href="{link_top_dau_bep}">Top Đầu bếp</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    <!-- BEGIN: top_user -->
+                    <div class="col-md-4 col-sm-4 top-author">
+                        <a href="{user_link}" class="thumb">
+                            <img class="img-responsive" src="{user_avatar}" alt="{user_name}" title="{user_name}" />
+                        </a>
+                        <h3>
+                            <a href="{user_link}">{user_name}</a>
+                        </h3>
+                        <div class="info">
+                            {html_info}
+                        </div>
+
+                    </div>
+                    <!-- END: top_user -->
+                </div>
+            </div> <!-- end top user -->
+
+            <div class="section" id="home-blog">
+                <h1 class="title-section"><a href="{link_blog}">Blog ẩm thực</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    <div class="col-md-5 col-sm-5">
+                        <a href="{blog_link0}">
+                            <img src="{blog_img0}" class="img-responsive" alt="{blog_title0}" title="{blog_title0}" />
+                        </a>
+                        <div class="blog-summary">
+                            <h3><a href="{blog_link0}">{blog_title0}</a></h3>
+                            <p>{blog_brief0}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <ul>
+                            <!-- BEGIN: blog -->
+                            <li><a href="{blog_link}">{blog_title}</a></li>
+                            <!-- END: blog -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end content -->
+
+
+        <div id="sidebar">
+
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+
+            {facebook}
+
+        </div> <!-- end side bar -->
+    </div>
+    <div class="clearfix"></div>
+</session>
+<!-- END: main -->

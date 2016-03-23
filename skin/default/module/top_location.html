@@ -1,0 +1,35 @@
+<!-- BEGIN: main -->
+<div class="widget">
+    <h1 class="title-widget"><a href="{link_location}">Top địa điểm</a><i class="fa fa-angle-right"></i></h1>
+    <ul class="tab-nav">
+        <!-- BEGIN: tab_region -->
+        <li><a href="#tab{i}" class="{class}">{tabname}</a></li>
+        <!-- END: tab_region -->
+    </ul>
+    <div id="top-place">
+        <!-- BEGIN: region -->
+        <ul id="content-tab{i}" style="{display}">
+            <li class="first">
+                <a class="thumb" href="{link0}">
+                    <img alt="{name0}" src="{img0}" class="img-responsive" />
+                    <span class="rank fn-order">{num0}</span>
+                    <span class="item-mask"></span>
+                </a>
+                <div class="des">
+                    <h3 class="ellipsis recipe-name"><a href="{link0}">{name0}</a></h3>
+                    {html_map0}
+                </div>
+            </li>
+            <!-- BEGIN: location -->
+            <li>
+                <span class="rank fn-order rank-2">{num}</span>
+                <h3 class="ellipsis"><a class="txt-primary fn-link fn-name" href="{link}" title="{name}">{name}</a></h3>
+                {html_map}
+            </li>
+            <!-- END: location -->
+        </ul>
+        <!-- END: region -->
+        <div class="clearfix"></div>
+    </div>
+</div> <!-- end top place -->
+<!-- END: main -->

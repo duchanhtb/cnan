@@ -1,0 +1,59 @@
+<!-- BEGIN: main -->
+<section>
+    <div class="container wrap-content">
+        <div id="content" class="detail-content">
+            <div id="recipe-detail">
+                <div id="recipe-print-content">
+                    <h1 class="title-section">{title}</h1>
+                    <div class="recipe-introduction has-colorbox">
+                        {content}
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div id="recipe-share" class="box-share">
+                    <ul>
+                        <li class="print"><a href="https://www.printfriendly.com/print/?source=homepage&url={current_page}" target="_blank"><i class="fa fa-print"></i>In</a></li>
+                        <li class="facebook"><a class="fn-sharelink" data-net="fb" data-title="{title}" href="{current_page}"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twitter"><a class="fn-sharelink" data-net="tw" data-title="{title}" href="{current_page}"><i class="fa fa-twitter"></i></a></li>
+                        <li class="google-plus"><a class="fn-sharelink" data-net="gp" data-title="{title}" href="{current_page}"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="pinterest"><a class="fn-sharelink" data-net="pt" data-title="{title}" href="{current_page}"><i class="fa fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+                
+                <h1 class="title-section" style="margin-top: 40px;">Bình luận</h1>
+                <div class="fb-comments" data-href="{current_page}" data-width="100%" data-numposts="6" data-colorscheme="light"></div>
+                
+            </div>
+        </div>
+
+        <div id="sidebar">
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+
+            {facebook}
+        </div> <!-- end side bar -->
+
+    </div>
+</section>
+<div class="overlay" id="error-reporting">
+    <div class="box-popup no-padding">
+        <form style="position: relative;" id="error-reporting-form">
+            <input type="hidden" value="{recipe_id}" name="recipe-id" id="report-id" />
+            <div class="wrap-login">
+                <h3 class="heading">Thông báo lỗi</h3>
+                <p class="sucsess" id="report-msg" style="display: none;">Cảm ơn bạn đã gửi thông báo <br /> cho chúng tôi</p>
+                {html_email_report}
+                <div class="post-input">
+                    <textarea name="content" id="report-content" placeholder="Nội dung"></textarea>
+                </div>
+            </div>
+            <button style="">Gửi</button>
+            <div class="close fn-close">&times;</div>
+        </form>
+    </div>
+</div>
+<!-- END: main -->

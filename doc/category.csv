@@ -1,0 +1,71 @@
+1,Video,0,1009
+2,Video nấu ăn,1,2
+3,Điểm tâm,0,3
+4,Món xôi,3,4
+5,Món phở,3,5
+6,Món mì,3,6
+7,Món cháo,3,7
+8,Món bún,3,8
+9,Khác,3,9
+10,Món ăn hàng ngày,0,1008
+11,Món chính - món mặn,10,11
+12,Món ăn kèm,10,12
+13,Món canh,10,13
+14,Món ăn tráng miệng,10,14
+15,Đồ uống,10,15
+16,Nguyên liệu ,0,1007
+17,Món ăn từ đậu hũ,16,17
+18,Món ăn từ thủy-hải sản,16,18
+19,Món ăn từ Rau-củ-quả,16,19
+20,Món ăn từ gia cầm,16,20
+21,Món ăn từ thịt bò,16,21
+22,Món ăn từ thịt heo,16,22
+23,Từ nguyên liệu khác,16,23
+24,Phong cách nấu ,0,1006
+25,Món xào,24,25
+26,Món trộn-gỏi,24,26
+27,Món chiên,24,27
+28,Món kho,24,28
+29,Món hấp,24,29
+30,Nấu canh,24,30
+31,Món nướng,24,31
+32,Món gỏi-cuốn,24,32
+33,Khác,24,33
+34,Ẩm thực các nước ,0,1005
+35,Món ăn Ý,34,35
+36,Món ăn Hàn Quốc,34,36
+37,Món ăn Nhật Bản,34,37
+38,Món ăn Trung Quốc,34,38
+39,Món ăn Thái Lan,34,39
+40,Món Âu,34,40
+41,Các nước khác,34,41
+42,Món ngon theo mùa ,0,1004
+43,Món ăn Valentine,42,43
+44,Món ăn Halloween,42,44
+45,Món ăn Giáng sinh,42,45
+46,Món ăn ngày của ba-mẹ,42,46
+47,Món ăn Trung Thu,42,47
+48,Món ăn Tết Nguyên Đán,42,48
+49,Khác,42,49
+50,Đặc sản vùng miền ,0,1003
+51,Món ăn miền Nam,50,51
+52,Món ăn miền Bắc,50,52
+53,Món ăn miền Trung,50,53
+54,Trổ tài làm bánh ,0,1002
+55,Bánh cưới,54,55
+56,Bánh kem,54,56
+57,Bánh mì,54,57
+58,Bánh cupcake,54,58
+59,Bánh trung thu,54,59
+60,Bánh tart,54,60
+61,Bánh Muffin,54,61
+62,Khác,54,62
+63,Các món ăn chay ,0,1001
+64,Món ăn từ nấm,63,64
+65,Món ăn từ đậu hũ,63,65
+66,Từ nguyên liệu khác,63,66
+67,Món ăn cho bé,0,1000
+68,Món cơm,67,68
+69,Món cháo,67,69
+70,Món bột,67,70
+71,Khác,67,71

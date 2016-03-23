@@ -1,0 +1,45 @@
+<!-- BEGIN: main -->
+<div class="clear"></div>
+<section>
+    <div class="container wrap-content">
+        <div class="category-content">
+            <div id="category-menu">
+                <h1><a href="">Danh mục</a></h1>
+                <div class="wrap-category fn-scrollbar">
+                    <ul>
+                        <!-- BEGIN: group -->   
+                        <li>
+                            <a href="{gr_link}">{gr_name}</a>
+                            {html_subcat}
+                        </li>
+                        <!-- END: group -->   
+                    </ul>
+                </div>
+            </div>
+
+            <div id="category-content">
+                <!-- BEGIN: category -->
+                <h1 class="title-section"><a href="{cat_link}">{cat_name}</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    
+                    <!-- BEGIN: sub -->
+                    <div class="col-md-4 col-xs-6 col-sm-6 category-grid">
+                        <a class="thumb" href="{sub_link}">
+                            <img alt="{sub_name}" src="{sub_img}" class="img-responsive">
+                            <div class="icon-view"><i class="fa fa-angle-double-right"></i></div>
+                            <span class="item-mask"></span>
+                        </a>
+                        <div class="category-name">
+                            <h3 class="ellipsis"><a href="{sub_link}">{sub_name}</a></h3>
+                        </div>
+                    </div>
+                    <!-- END: sub -->
+                    
+                </div>
+                <!-- END: category -->
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+<!-- END: main -->

@@ -1,0 +1,741 @@
+#register-form{
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+h2.heading{
+    font-weight: 400;
+    margin-bottom: 0;
+} 
+#register-form .rg-form{
+    background-color: #f3f3f3;
+    border: 1px solid #e2e2e2;
+    padding: 15px 20px;
+}
+#register-form .rg-input{
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+#register-form .rg-input input{
+    border: none;
+    width: 100%;
+    padding-right: 12px;
+}
+#register-form .require_icon{
+    font-size: 30px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+}
+#register-form .require_icon,
+#register-form .red{
+    color: #f21616;	
+}
+#register-form .rg-captcha{
+    width: 40%;
+    float: left;
+}
+#register-form .img-captcha{
+    margin-right: 5%;
+    width: 55%;
+    padding: 0 !important;
+}
+#register-form .img-captcha img{
+    height: 100%;
+}
+#register-form .img-captcha .refresh{
+    position: absolute;
+    top: 9px;
+    right: 8px;
+}
+#register-form .img-captcha .refresh i{
+    font-size: 22px;
+    color: #28619B;
+}
+#register-form .rg-bottom{
+
+}
+#register-form .rg-bottom .link-back{
+    float: left;
+    font-size: 14px;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+}
+#register-form .policy{
+    width: 70%;
+    float: left;
+}
+#register-form p{
+    font-size: 12px;
+    margin: 0;
+    color: #888;
+}
+#register-form .rule{
+    margin-bottom: 8px;
+}
+#register-form .button{
+    width: 25%;
+    float: right;	
+}
+#register-form .button a,
+.button a{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background: -webkit-linear-gradient(#449bd3, #1579ba); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#449bd3, #1579ba); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#449bd3, #1579ba); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#449bd3, #1579ba); /* Standard syntax */
+    border-radius: 5px;
+}
+#register-form .button a:hover,
+.button a:hover{
+    background: -webkit-linear-gradient(#48AFF2, #1A95E5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#48AFF2, #1A95E5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#48AFF2, #1A95E5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#48AFF2, #1A95E5); /* Standard syntax */
+    border-radius: 5px;
+}
+#register-form #rg-other{
+    padding: 20px 0;
+}
+#register-form #rg-other ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#register-form #rg-other ul li{
+    width: 130px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+#register-form .title-rg-other{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+#register-form #rg-other ul li a{
+    display: block;
+    width: 100%;
+    height: 46px;
+    line-height: 37px;
+    border-top: 1px solid #bebebe;
+    border-right: 1px solid #bebebe;
+    border-left: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
+    border-radius: 23px;
+    padding: 3px;
+    background: -webkit-linear-gradient(#fafafa, #e8e8e8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fafafa, #e8e8e8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fafafa, #e8e8e8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fafafa, #e8e8e8); /* Standard syntax */
+    font-size: 16px;
+}
+
+
+#register-form #rg-other ul li a:hover span{
+    background: #fff;
+}
+#register-form #rg-other ul li a#facebook:hover{
+    background: #5272a8;
+    color: #fff;
+}
+#register-form #rg-other ul li a#facebook:hover i{
+    color: #5272a8;
+}
+#register-form #rg-other ul li a#yahoo:hover{
+    background: #6d17a4;
+    color: #fff;
+}
+#register-form #rg-other ul li a#yahoo:hover i{
+    color: #6d17a4;
+}
+#register-form #rg-other ul li a#google-plus:hover{
+    background: #ba4600;
+    color: #fff;
+}
+#register-form #rg-other ul li a#google-plus:hover i{
+    color: #ba4600;
+}
+#register-form #rg-other ul li a:hover{
+    border: none;
+}
+#register-form #rg-other ul li i{
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* login form */
+#wrap-user{
+    min-height: 450px;
+    width: 800px;
+    margin: 0 auto;
+}
+#login-form{
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    float: right;
+}
+#login-form h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+} 
+#login-form .rg-form{
+    background-color: #f3f3f3;
+    border: 1px solid #e2e2e2;
+    padding: 15px 20px;
+}
+#login-form .rg-input{
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+#login-form .rg-input input{
+    border: none;
+    width: 100%;
+    padding-right: 12px;
+}
+#login-form .require_icon{
+    font-size: 30px;
+    position: absolute;
+    right: 8px;
+    top: 15px;
+}
+#login-form .require_icon,
+#login-form .red{
+    color: #f21616;	
+}
+#login-form .rg-captcha{
+    width: 40%;
+    float: left;
+}
+#login-form .img-captcha{
+    margin-right: 5%;
+    width: 55%;
+    padding: 0 !important;
+}
+#login-form .img-captcha img{
+    height: 100%;
+}
+#login-form .img-captcha .refresh{
+    position: absolute;
+    top: 9px;
+    right: 8px;
+}
+#login-form .img-captcha .refresh i{
+    font-size: 22px;
+    color: #28619B;
+}
+#login-form .rg-bottom{
+
+}
+#login-form .policy{
+    width: 60%;
+    float: left;
+}
+#login-form p{
+    font-size: 16px;
+    margin: 0;
+    color: #888;
+    margin-top: 10px;
+}
+#login-form .rule{
+    margin-bottom: 8px;
+}
+#login-form .button,
+.rg-bottom .button a{
+    width: 40%;
+    float: right;	
+}
+#login-form .button a,
+.rg-bottom .button a{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#login-form .title-rg-other{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+#register-form .button a,
+#login-form .button a,
+.rg-bottom .button a,
+a#btn-register{
+    background: -webkit-linear-gradient(#449bd3, #1579ba); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#449bd3, #1579ba); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#449bd3, #1579ba); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#449bd3, #1579ba); /* Standard syntax */
+}
+#register-form .button a:hover,
+#login-form .button a:hover,
+.rg-bottom .button a,
+a#btn-register:hover,
+.rg-bottom .button a{
+    background: -webkit-linear-gradient(#48AFF2, #1A95E5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#48AFF2, #1A95E5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#48AFF2, #1A95E5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#48AFF2, #1A95E5); /* Standard syntax */
+}
+.arrow_box {
+    display: none;
+    position: relative;
+    background: #DD7171;
+    border: 1px solid #fff;
+}
+.arrow_box:after, .arrow_box:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(221, 113, 113, 0);
+    border-left-color: #DD7171;
+    border-width: 10px;
+    margin-top: -10px;
+}
+.arrow_box:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #fff;
+    border-width: 11px;
+    margin-top: -11px;
+}
+.tipcontent{
+    color: #fff;
+    left: -220px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 3px;
+    width: 210px;
+    font-size: 14px;
+}
+
+.user-msg{
+    background-color: #ecf7ff;
+    border: 1px solid #cee1eb;
+    font-size: 14px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    display: none;
+}
+
+.tipguide{
+    display: none;
+    position: absolute; 
+    right: 0px; 
+    top: 50px; 
+    z-index: 888;
+}
+.tipguide .tipguide-arrow{
+    width: 0; 
+    height: 0; 
+    border-width: 0 10px 40px 10px; 
+    border-color: transparent transparent #81A0BE transparent; 
+    border-style: solid;
+    -moz-transform: rotate(40deg);  /* FF3.5/3.6 */
+    -o-transform: rotate(40deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(40deg);  /* Saf3.1+ */
+    transform: rotate(40deg);  /* Newer browsers (incl IE9) */
+    -ms-transform: rotate(40deg);
+    position: absolute; 
+    top: -28px; 
+    right: 20px;
+    z-index: -1;
+}
+.tipguide .tipguide-content{
+    background: #81A0BE; 
+    width: 250px; 
+    color: #fff; 
+    padding: 5px 10px;
+    z-index: 9999;
+}
+.rg-tip{
+    font-size: 18px;
+    color: #6b6b6b;
+    font-weight: 300;
+}
+#btn-register{
+    display: block;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    background: #1579ba;
+    font-size: 16px;
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#rg-other h3{
+    font-weight: 400;
+}
+#wrap-forgot{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.button-cancel{
+    float: right;
+    width: 25%;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-family: arial,serif !important;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 auto;
+    min-width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.button-cancel a{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    background: -webkit-linear-gradient(#fafafa, #e8e8e8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fafafa, #e8e8e8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fafafa, #e8e8e8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fafafa, #e8e8e8); /* Standard syntax */
+    border-radius: 5px;
+}
+.button-cancel a:hover{
+    background: -webkit-linear-gradient(#f0f0f0, #e2e2e2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0f0f0, #e2e2e2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0f0f0, #e2e2e2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0f0f0, #e2e2e2); /* Standard syntax */
+    border-radius: 5px;
+}
+.w100{
+    width: 100px !important;
+    padding: 0;
+    margin-right: 10px;
+}
+#forgot-btn{
+    /*width: 500px;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#list-method{
+    list-style: none;
+    margin: 0;
+}
+#list-method li{
+    color: #666;
+    margin-top: 8px;
+}
+#list-method input{
+    margin-right: 5px;
+}
+#wrap-user .heading{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+#wrap-user{
+    font-size: 16px;
+    color: #666;
+}
+.forgot-pass p{
+    margin: 0;
+}
+.forgot-pass{
+    margin: 40px 0px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 0 300px 20px;
+}
+#noted{
+    margin-left: 30px;
+}
+
+/* policy */
+.policy-heading{
+    margin-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: right;
+}
+#policy h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+#policy ul.list{
+    padding: 0;
+    margin: 0;
+}
+#policy ul.list li{
+    list-style: none;
+    display: block;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    box-shadow: -2px 0 4px -4px #888 inset, 0 1px 0 #fff inset;
+    border-top: none;
+    -webkit-transition: background-color 0.5s ease;                  
+    -moz-transition: background-color 0.5s ease;                 
+    -o-transition: background-color 0.5s ease;   
+    -ms-transition: background-color 0.53s ease;          
+    transition: background-color 0.5s ease;
+}
+#policy ul.list li a{
+    display: block;
+    padding: 15px;
+}
+#policy ul.list li:hover{
+    background-color: #ebebeb;
+}
+#policy ul.list li.active{
+    background-color: #fff;
+    border-left: 4px solid #666;
+    border-right: none;
+    box-shadow: none;
+}
+#policy .policy-content{
+    color: #333;
+    padding: 20px 0px;
+}
+#policy h2.heading,
+#profile h2.heading{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 1px dotted #CECECE;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+#policy h3{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px dotted #CECECE;
+
+}
+#policy ol{
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+#policy ol li{
+    line-height: 30px;
+}
+#policy .heading i,
+#profile .heading i{
+    color: #CECECE;
+    margin-right: 10px;
+}
+
+/* profile */
+#profile{
+    color: #333;
+}
+#nav-user{
+    background-color: #ecf7ff;
+    font-size: 14px;
+    border: 1px solid #cee1eb;
+}
+#nav-user p{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    height: 46px;
+    line-height: 46px;
+}
+
+#menu-list{
+    margin: 0;
+    padding: 0;
+}
+#menu-list li{
+    list-style: none;
+}
+#menu-list li a{
+    background-image: url('../images/icon-user-list.png');
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    color: #555;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #e2e2e2;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: -2px 0 4px -4px #888 inset;
+}
+#menu-list li .login-info{
+    background-position: 5px -42px;
+}
+#menu-list li .common-info{
+    background-position: 5px 14px;
+}
+#menu-list li .connect-info{
+    background-position: 5px -95px;
+}
+#menu-list li .protect{
+    background-position: 5px -155px;
+}
+#menu-list li .recipe{
+    background-position: 5px -295px;
+}
+#menu-list li .location{
+    background-position: 5px -372px;
+}
+#menu-list li a:hover{
+    background-color: #EBEBEB;
+}
+#menu-list li a.active{
+    border-right: none;
+    background-color: #fff;
+    border-left: 2px solid #666666;
+    box-shadow: none;
+}
+#profile .update{
+    cursor: pointer;
+    margin-left: 10px;
+    color: #2a6694 !important;
+    font-size: 12px;
+    text-transform: none;
+    float: right;
+    padding-left: 12px;
+    font-family: tahoma, sans-serif;
+    font-weight: normal;
+}
+#profile .update:hover{
+    background: url('../images/editpen.gif') center left no-repeat;
+    text-decoration: underline;
+}
+#profile .wrap-content{
+    display: none;
+    padding: 10px 0;
+    min-height: 500px;
+    margin-top: 0;
+}
+#profile ul.content{
+    padding: 0;
+    margin: 0;
+}
+#profile ul.content li{
+    color: #333;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dotted #ccc;
+}
+#profile ul.content li span{
+    display: inline-block;
+    font-weight: normal;
+    width: 200px;
+    margin: 0;
+}
+#connect-info span{
+    width: 150px !important; 
+    border-right: 1px dotted #ddd;
+    margin-right: 30px !important;
+}
+#connect-info a{
+    display: inline-block;
+    padding: 0 20px;
+    border: 2px solid #147fbc;
+    background-color: #2890cc;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+#connect-info a:hover{
+    text-decoration: none;
+    background-color: #4a9857;
+    border-color: #3d7846;
+}
+#profile h2.heading{
+    margin-bottom: 20px;
+}
+.recipe-list a.update{
+    float: none !important;
+}
+#profile .recipe-list .locate{
+    padding: 0;
+}
+#content .recipe-list .locate i{
+    color:  #888;
+}
+#content .recipe-list .locate:hover i{
+    color:  #ae4ad9;
+}
+.user-location .locate{
+    position: inherit !important;
+    float: left;
+    text-align: left;
+}
+#profile a.post-button {
+    background: linear-gradient(#449bd3, #1579ba) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    width: 150px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    float: right;
+}
+#profile a.post-button:hover {
+    background: linear-gradient(#48aff2, #1a95e5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,30 @@
+.stickytooltip{
+    box-shadow: 5px 5px 8px #818181; /*shadow for CSS3 capable browsers.*/
+    -webkit-box-shadow: 5px 5px 8px #818181;
+    -moz-box-shadow: 5px 5px 8px #818181;
+    display:none;
+    position:absolute;
+    display:none;
+    background:white;
+    z-index:3000;
+}
+.stickytooltip .stickystatus{ /*Style for footer bar within tooltip*/
+    display: none;
+    background:white;
+    color:white;
+    padding-top:5px;
+    text-align:left;
+    font:bold 11px Arial;
+}
+
+ul.product-item li:hover {border-color:#ff6000}
+.hanh li .title-popup h3 {text-align:left !important}
+.hanh li { float:none !important; margin:0 0 10px !important; width:auto !important; border:none !important; padding:0 !important; text-align:left !important;}
+.hanh li .form-left { width:85px !important}
+.hanh li .form-right {width: 189px !important;}
+.sticky_images{
+    max-width: 500px;
+    max-height: 500px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}

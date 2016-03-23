@@ -1,0 +1,182 @@
+<!-- BEGIN: main -->
+<section>
+    <div class="container" id="post-form">
+        <h2 class="heading">Chia sẻ công thức món ăn</h2>
+        <div class="wrap-post">
+            <p class="rule">Những thông tin có dấu <strong style="font-size: 18px; padding: 0 5px;" class="red">*</strong>là bắt buộc nhập</p>
+            <form name="post-form" id="frm" method="post" data-action="post_recipe">
+                <input type="hidden" name="recipe_id" id="post-id" value="{recipe_id}" />
+                <div class="error red none msg-recipe_name">Bạn cần nhập tên món ăn để tiếp tục</div>
+                <div class="post-row post-input title">
+                    <input type="text" name="recipe_name" class="must-set" value="{recipe_name}" placeholder="Tên món ăn" />
+                    <em class="require_icon red">*</em>
+                </div>
+                <div class="post-row post-input title">
+                    <input type="text" name="youtube" value="{youtube}" placeholder="Link youtube hướng dẫn (nếu có)" />
+                </div>
+                <div class="post-row">
+                    <div class="error red none msg-recipe_img">Bạn cần nhập ảnh món ăn</div>
+                    <div class="post-input title" style="margin-bottom: 2px;">
+                        <input type="text" class="image-url must-set" name="recipe_img" value="{img}" placeholder="Pate link ảnh vào đây" />
+                        <em class="require_icon red">*</em>
+                    </div>
+                    <div id="post-images" class="input-image" data-type="recipe">
+                        <img id="img-preview" src="{src_img}" />
+                        <div class="button">
+                            <span style="color: #333;">Hoặc </span><br />
+                            <a href="#" class="btnUpload">Chọn ảnh</a><br />
+                            <span class="lblUpload" style="color: #333; font-weight: normal;"></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="post-row">
+                    <label>Thành phần nguyên liệu: </label>
+                    <a href="javascript:swapIngridient()" >[>Đổi chỗ<]</a>
+                    <div id="ingredients">
+                        <!-- BEGIN: ingridient -->
+                        <div class="ingredient">
+                            <div class="post-input ingredient-name">
+                                <input type="text" value="{ingridient_name}" name="ingridient[]" placeholder="Tên nguyên liệu" />
+                            </div>
+                            <div class="post-input ingredient-value">
+                                <input type="text" value="{ingridient_unit}" name="unit[]" placeholder="Đơn vị" />
+                            </div>
+                            <div class="button fl">
+                                <a href="javascript:void(0)">Xóa <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <!-- END: ingridient -->
+                    </div>
+                    <div class="button fl" id="add-ingridient">
+                        <a href="javascript:void(0)">Thêm</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear break"></div>
+                <div class="post-row">
+                    <label>Giới thiệu:<em class="require">*</em></label>
+                    <div class="error red none msg-brief">Bạn cần nhập nội dung để tiếp tục</div>
+                    <textarea style="width: 100%;" class="must-set" rows="5" name="brief">{brief}</textarea>
+                </div>
+                <div class="post-row">
+                    <label>Các bước thực hiện:<em class="require">*</em></label>
+                    <div class="error red none msg-intruction">Bạn cần nhập nội dung để tiếp tục</div>
+                    <textarea name="intruction" class="must-set editor" style="width: 100%;" rows="40" id="editor">{intruction}</textarea>
+                </div>
+                <div class="clear break"></div>
+                <div class="post-row">
+                    <label>Thời gian thực hiện</label>
+                    <div class="row" id="cooking-time">
+                        <div class="col-md-2 col-sm-3 col-xs-6 center">
+                            <input type="radio" name="cooking_time" value="1" data-label="" class="radio" {checked_1} />    
+                            <span>Dưới 15 phút</span>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6 center">
+                            <input type="radio" name="cooking_time" value="2" data-label="" class="radio" {checked_2} />
+                            <span>Dưới 30 phút</span>    
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6 center">
+                            <input type="radio" name="cooking_time" value="3" data-label="" class="radio" {checked_3} />
+                            <span>Dưới 1 tiếng</span>      
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6 center">
+                            <input type="radio" name="cooking_time" value="4" data-label="" class="radio" {checked_4} />
+                            <span>Trên 1 tiếng</span>      
+                        </div>
+                    </div>
+                </div>
+                <div class="clear break"></div>
+                <div class="post-row">
+                    <label class="w200">Khẩu phẩn ăn:</label>
+                    <select name="yield">
+                        <option value="NULL" {yield_null}>Chưa rõ</option>
+                        <option value="1" {yield_1}>1 người</option>
+                        <option value="2" {yield_2}>2 người</option>
+                        <option value="3" {yield_3}>3 người</option>
+                        <option value="4" {yield_4}>4 người</option>
+                        <option value="5" {yield_5}>5 người</option>
+                        <option value="6" {yield_6}>6 người</option>
+                        <option value="7" {yield_7}>7 người</option>
+                        <option value="8" {yield_8}>8 người</option>
+                        <option value="8" {yield_9}>9 người</option>
+                        <option value="10" {yield_10}>10 người</option>
+                        <option value="0" {yield_0}>Nhiều hơn 10</option>
+                    </select>
+                </div>
+                <div class="post-row">
+                    <label class="w200">Giá trị dinh dưỡng:</label>
+                    <div class="post-input w200" style="margin-bottom: 0 !important;">
+                        <input type="text" value="{nutrition_facts}" name="nutrition_facts" placeholder="Ví dụ: 250 Kcal" />
+                    </div>
+                </div>
+                <div class="post-row">
+                    <label class="w200">Giá tiền:</label>
+                    <div class="post-input w200">
+                        <input type="text" value="{price}" name="price" class="number" placeholder="Ví dụ: 30.000 VNĐ" />
+                    </div>&nbsp;VNĐ
+                </div>
+                <div class="post-row" id="recipe-category">
+                    <h2 style="font-size: 20px; font-weight: 400; border-bottom: 1px solid #e9e9d4;">Chọn danh mục:</h2>
+                    <div class="error red none">Bạn cần nhập nội dung để tiếp tục</div>
+                    <div class="row">
+                        <!-- BEGIN: group -->
+                        <div class="col-md-4 col-sm-4 col-xs-6 bottom-40">
+                            <h2 class="group">{group_name}</h2>
+                            <!-- BEGIN: cat -->
+                            <input type="checkbox" name="category[]" value="{cat_id}" class="category" {checked} data-label="{cat_name}" />
+                            <!-- END: cat -->
+                        </div>
+                        <!-- END: group -->
+                    </div>
+                </div>
+                <div class="clear break"></div>
+                <div class="post-row" id="recipe-gallery">
+                    <h2 style="font-size: 20px; font-weight: 400;">Thêm bộ sưu tập ảnh cho món ăn này?</h2>
+                    <ul id="thumbnails" data-type="recipe">
+                        <li>
+                            <div id="drop"><a>Chọn ảnh</a>
+                                <input type="file" multiple="" name="userfile">
+                            </div>
+                        </li>
+                        <!-- BEGIN: recipe_image -->
+                        <li id="image-{img_id}">
+                            <img width="120" height="120" src="{img_src}">
+                            <div class="rwmb-image-bar">
+                                <a href="javascript:void(0)" class="rwmb-delete-file" onclick="deleteImages({img_id},'recipe')">×</a>
+                            </div>
+                        </li>
+                        <!-- END: recipe_image -->
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear break"></div>
+                <div class="post-row" style="text-align: left;">
+                    <div class="button" id="button-post">
+                        <a href="javascript:void(0)" onclick="submitForm('#frm')">Đăng</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="cnan-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Cách nấu ăn ngon</h4>
+      </div>
+      <div class="modal-body">
+        <p class="cnan-content center">Đang xử lý...</p>
+        <p class="center"><img id="img-status" src="{skin_path}asset/images/ajax-loader.gif"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- END: main -->

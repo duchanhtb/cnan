@@ -1,0 +1,75 @@
+<!-- BEGIN: main -->
+<section>
+    <div class="container wrap-content">
+        <div class="home-content" id="content">
+            <div id="home-recipe-list">
+                <ul class="search-tab">
+                    <li><a href="#tab1" class="active">Công thức nấu ăn</a></li>
+                    <li><a href="#tab2">Địa điểm ăn ngon</a></li>
+                </ul>
+                <div class="break-line"></div>
+                <div id="search-content-tab1" class="search-content">
+                    {html_result_recipe}
+                    <!-- BEGIN: recipe -->
+                    <div class="row recipe-list">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a class="thumb" href="{recipe_link}"><img alt="{recipe_name}" class="img-responsive" src="{recipe_img}" title="{recipe_name}" />
+                                {recipe_cooking_time}
+                            </a>
+                        </div>
+                        <div class="col-md-8 des">
+                            <h3 class="title-item txt-primary">
+                                <a href="{recipe_link}">{recipe_name}</a>
+                            </h3>
+                            <p>{recipe_intruction}</p>
+                            <div class="author">
+                                <h4>
+                                    <a href="{recipe_author_link}">{recipe_author}<span class="view"><i class="fa fa-heart-o"></i>{recipe_point}</span></a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="break-line"></div>
+                    <!-- END: recipe -->
+                    {html_share_recipe}
+                </div>
+                
+                <div id="search-content-tab2" class="search-content" style="display: none">
+                    {html_result_locate}
+                    <div class="row">
+                        <!-- BEGIN: locate -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 locate-grid">
+                            <a href="{link}" class="thumb">
+                                <img class="img-responsive" src="{img}" alt="{name}" >
+                                <div class="icon-view"><i class="fa fa-angle-double-right"></i></div>
+                                <div class="des">
+                                    <h3 class="title-item txt-primary">{name}</h3>
+                                    {html_address}
+                                </div>
+                                {html_locate}
+                                <span class="item-mask"></span>
+                            </a>
+                        </div>
+                        <!-- END: locate -->
+                        {html_share_locate}
+                    </div>
+                </div>
+                
+            </div>
+            <div class="clearfix"></div>
+        </div><!-- end content -->
+        <div id="sidebar">
+
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+
+            {facebook}
+
+        </div> <!-- end side bar -->
+    </div>
+    <div class="clearfix"></div>
+</section>
+<!-- END: main -->

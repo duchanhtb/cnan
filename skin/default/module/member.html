@@ -1,0 +1,101 @@
+<!-- BEGIN: main -->
+<div id="nav-user">
+    <div class="container">
+        <p>Thành viên: <strong>{display_name}</strong></p>
+    </div>
+</div>
+<div id="profile" class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <ul id="menu-list">
+                <li><a href="#tab-login-info" class="login-info">Thông tin cơ bản</a></li>
+                <li><a href="#tab-recipe" class="recipe">công thức đã đăng ({total_recipe})</a></li>
+                <li><a href="#tab-location" class="location">Địa điểm chia sẻ ({total_locate})</a></li>
+            </ul>
+        </div>
+        <div class="col-md-8" style="border-left: 1px solid #f2f2f2">
+            <div class="wrap-content" id="wr-tab-login-info">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>{display_name}
+                </h2>
+                <ul id="common-info" class="content">
+                    <li>
+                        <span>{display_name}</span><strong><a href="{avatar_full}" class="colorbox"><img src="{avatar}" alt="{display_name}" height="28" style="border-radius: 50%" /></a></strong>
+                    </li>
+                    <li>
+                        <span>Giới tính:</span>{gender}
+                    </li>
+                    <li>
+                        <span>Đến từ:</span>{province}
+                    </li>
+                    <li>
+                        <span>Là thành viên từ:</span>{date_register}
+                    </li>
+                    <li>
+                        <span>Điểm:</span>{point}
+                    </li>
+                </ul>
+            </div> <!-- end login info -->
+            
+            <div class="wrap-content" id="wr-tab-recipe">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Công thức đã đăng
+                </h2>
+                {html_no_recipe}
+                <!-- BEGIN: recipe -->
+                <div class="row recipe-list">
+                    <div class="col-md-4 col-sm-6">
+                        <a class="thumb" href="{recipe_link}" target="_blank">
+                            <img alt="{recipe_title}" src="{recipe_img}" class="img-responsive" />
+                            {recipe_cooking_time}
+                        </a>
+                    </div>
+                    <div class="col-md-8 des">
+                        <h3 class="title-item txt-primary">
+                            <a href="{recipe_link}" target="_blank">{recipe_title}</a>
+                        </h3>
+                        <p>{recipe_intruction}</p>
+                    </div>
+                </div>
+                <div class="break-line"></div>
+                <!-- END: recipe -->
+                {paging_recipe}
+
+                
+            </div>  <!-- end recipe -->
+
+            <div class="wrap-content" id="wr-tab-location">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Địa điểm đã đăng
+                </h2>
+                <div class="user-location">
+                    {html_no_locate}
+                    <!-- BEGIN: locate -->
+                    <div class="row recipe-list">
+                        <div class="col-md-4 col-sm-6">
+                            <a class="thumb" href="{locate_link}" target="_blank">
+                                <img alt="{locate_name}" src="{locate_img}" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-md-8 des">
+                            <h3 class="title-item txt-primary">
+                                <a href="{locate_link}" target="_blank">{locate_name}</a>
+                            </h3>
+                            <p>{locate_brief}</p>
+                            <div class="author">
+                                <h4>
+                                    <a href="{locate_gmap}" class="iframe-colorbox locate"><i class="fa fa-map-marker"></i>Bản đồ</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="break-line"></div>
+                    <!-- END: locate -->
+                    {paging_locate}
+                </div>
+            </div>  <!-- end location -->
+
+        </div>
+    </div>
+</div>
+<!-- END: main -->

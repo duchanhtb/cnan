@@ -1,0 +1,75 @@
+<!-- BEGIN: main -->
+<div id="register-form">
+    {html_msg}
+    <h2 class="heading">Đăng ký</h2>
+    <form method="post" id="user-register-form">
+        <div class="rg-form">
+            <p class="rule">Những thông tin có dấu    <strong class="red" style="font-size: 18px; padding: 0 5px;">*</strong>là bắt buộc nhập</p>
+            <div class="rg-input">
+                <em class="require_icon">*</em>
+                <input type="text" name="fullname" id="rg-fullname" value="" placeholder="Họ tên" tabindex="1" />
+                <div class="tipguide">
+                    <div style='position: relative;'>
+                        <div class="tipguide-arrow"></div>
+                        <div class="tipguide-content">Vui lòng nhập tên thật và chính xác từ 2-40 ký tự</div>
+                    </div>
+                </div>
+                <div class="arrow_box tipcontent tip-fullname">Bạn cần nhập thông tin này</div>
+            </div>
+            <div class="rg-input">
+                <em class="require_icon">*</em>
+                <input type="text" name="email" id="rg-email" value="" placeholder="Nhập địa chỉ email" tabindex="2" />
+                <div class="tipguide">
+                    <div style='position: relative;'>
+                        <div class="tipguide-arrow"></div>
+                        <div class="tipguide-content">Email dùng để đăng nhập, lấy lại mật khẩu và những thông tin khác</div>
+                    </div>
+                </div>
+                <div class="arrow_box tipcontent tip-email">Bạn cần nhập thông tin này</div>
+            </div>
+            <div class="rg-input">
+                <em class="require_icon">*</em>
+                <input type="text" name="re-email" value="" placeholder="Nhập lại địa chỉ email" tabindex="3" />
+                <div class="arrow_box tipcontent tip-re-email">Bạn cần nhập thông tin này</div>
+            </div>
+            <div class="rg-input">
+                <em class="require_icon">*</em>
+                <input type="password" name="password" id="rg-password" value="" placeholder="Mật khẩu" tabindex="4" />
+                <div class="tipguide">
+                    <div style='position: relative;'>
+                        <div class="tipguide-arrow"></div>
+                        <div class="tipguide-content">Mật khẩu an toàn bao gồm cả chữ viết hoa, viết thường, chữ số và những ký tự đặc biệt</div>
+                    </div>
+                </div>
+                <div class="arrow_box tipcontent tip-password">Bạn cần nhập thông tin này</div>
+            </div>
+            <div class="rg-input rg-captcha img-captcha">
+                <img src="{base_url}captcha.php?width=180&amp;height=40&amp;characters=4&r={rand}" id="rg-img-captcha" style="height: 40px;" />
+                <a  href="javascript:void(0)" onclick="reloadCaptcha('#rg-img-captcha', 180, 40, 4)" class="refresh" title="Click để đổi mã bảo vệ khác"><i class="fa fa-refresh"></i></a>
+                <div class="arrow_box tipcontent tip-captcha">Bạn cần nhập thông tin này</div>
+            </div>
+            <div class="rg-input rg-captcha">
+                <em class="require_icon">*</em>
+                <input class="captcha" type="text" name="captcha" id="rg-captcha" value="" tabindex="5" />
+            </div>
+            <div class="rg-bottom">
+                <div class="policy">
+                    <p>Bằng việc click vào các nút Đăng ký bạn đã <br/> đồng ý<a href="{link_policy}" target="_blank" style="font-weight: bold; margin: 0 5px;">Điều khoản sử dụng</a></p>
+                </div>
+                <div class="button">
+                    <a href="javascript:void(0)" onclick="submitForm('#user-register-form')">Đăng ký</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </form>
+    <div id="rg-other">
+        <h3 class="title-rg-other">Hoặc đăng ký tài khoản với</h3>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="openPopup('{login_facebook}', 'Login with Facebook')" id="facebook"><span class="wr-social wr-facebook"><i class="fa fa-facebook"></i></span>Facebook</a></li>
+            <li><a href="javascript:void(0)" onclick="openPopup('{login_google}', 'Login with Google')"  id="google-plus"><span class="wr-social wr-goolge-plus"><i class="fa fa-google-plus"></i></span>Google</a></li>
+            <!--<li><a href="javascript:void(0)" onclick="openPopup('{login_yahoo}', 'Login with Yahoo')" id="yahoo"><span class="wr-social wr-yahoo"><i class="fa fa-yahoo"></i></span>Yahoo</a></li>-->
+        </ul>
+    </div>	
+</div>
+<!-- END: main -->

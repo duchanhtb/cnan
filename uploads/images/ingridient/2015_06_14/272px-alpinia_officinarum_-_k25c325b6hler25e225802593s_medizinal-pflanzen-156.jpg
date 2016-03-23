@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<title>Error generating thumbnail</title>
+</head>
+<body>
+<h1>Error generating thumbnail</h1>
+<p>
+The requested page title was invalid, empty, or an incorrectly linked inter-language or inter-wiki title.
+It may contain one or more characters that cannot be used in titles.
+</p>
+<!-- http://commons.wikimedia.org/w/thumb_handler.php/8/89/Alpinia_officinarum_-_K%25C3%25B6hler%25E2%2580%2593s_Medizinal-Pflanzen-156.jpg/272px-Alpinia_officinarum_-_K%25C3%25B6hler%25E2%2580%2593s_Medizinal-Pflanzen-156.jpg -->
+<!-- mw1154 -->
+
+</body>
+</html>

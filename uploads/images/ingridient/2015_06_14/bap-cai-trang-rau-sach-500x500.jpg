@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="vi" xml:lang="vi">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />    
+<title>Trang bạn yêu cầu không tồn tại!</title>
+<base href="http://rausachanhduong.com.vn/" />
+<link href="http://rausachanhduong.com.vn/image/data/rau-sach-favico.png" rel="icon" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/psn/stylesheet/stylesheet.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.9.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.9.custom.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/external/jquery.cookie.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<!-- Scrollable -->
+<script type="text/javascript" src="catalog/view/javascript/jquery/scrollable/jquery.tools.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/scrollable/scrollable.css" media="screen" />
+<!-- #Scrollable -->
+<script type="text/javascript" src="catalog/view/javascript/jquery/scrollable/jquery.tools.min.js"></script>
+
+<!-- Lazyload -->
+<script type="text/javascript" src="catalog/view/javascript/jquery/lazyload/jquery.lazyload.pack.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".news-info img").lazyload({ 
+    effect : "fadeIn"
+});
+});
+</script>
+<!-- #Lazyload -->
+<!-- Standby -->
+<!--<script type="text/javascript" src="catalog/view/javascript/jquery/standby/savetheenvironment.js?time=60&lang=vi"></script>-->
+<!-- #Standby -->
+
+<!-- Hiệu ứng làm mờ ảnh khi hover -->
+<script type='text/javascript'> 
+$(document).ready(function(){ 
+$(".product-featured-home img").fadeTo("slow", 1.0); // This sets the opacity of the thumbs to fade down to 30% when the page loads 
+$(".product-featured-home img").hover(function(){ 
+$(this).fadeTo("slow", 0.5); // This should set the opacity to 100% on hover 
+},function(){ 
+$(this).fadeTo("slow", 1.0); // This should set the opacity back to 30% on mouseout 
+}); 
+}); 
+</script>
+<script type='text/javascript'> 
+$(document).ready(function(){ 
+$(".image").fadeTo("slow", 1.0); // This sets the opacity of the thumbs to fade down to 30% when the page loads 
+$(".image").hover(function(){ 
+$(this).fadeTo("slow", 0.5); // This should set the opacity to 100% on hover 
+},function(){ 
+$(this).fadeTo("slow", 1.0); // This should set the opacity back to 30% on mouseout 
+}); 
+}); 
+</script> 
+<!-- ##Hiệu ứng làm mờ ảnh khi hover -->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/psn/stylesheet/ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/psn/stylesheet/ie6.css" />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+
+</head>
+<body>
+<div id="container">
+<div id="header">
+    <div id="logo"><a href="/"><img src="http://rausachanhduong.com.vn/image/data/logo.png" title="Siêu thị rau sạch Ánh Dương - chuyên cung cấp rau sạch Hà Nội - Miền Bắc" alt="Siêu thị rau sạch Ánh Dương - chuyên cung cấp rau sạch Hà Nội - Miền Bắc" /></a></div>
+      <form action="http://rausachanhduong.com.vn/index.php?route=common/home" method="post" enctype="multipart/form-data">
+    <div id="language">Ngôn Ngữ :
+            <img src="image/flags/vn.png" alt="Vietnamese" title="Vietnamese" onclick="$('input[name=\'language_code\']').attr('value', 'vi').submit(); $(this).parent().parent().submit();" />
+            <img src="image/flags/gb.png" alt="English" title="English" onclick="$('input[name=\'language_code\']').attr('value', 'en').submit(); $(this).parent().parent().submit();" />
+            <input type="hidden" name="language_code" value="" />
+      <input type="hidden" name="redirect" value="http://rausachanhduong.com.vn/index.php?route=error/not_found" />
+    </div>
+  </form>
+      <form action="http://rausachanhduong.com.vn/index.php?route=common/home" method="post" enctype="multipart/form-data">
+    <div id="currency">Tiền Tệ :
+                        <a title="US Dollar" onclick="$('input[name=\'currency_code\']').attr('value', 'USD').submit(); $(this).parent().parent().submit();">$</a>
+                                    <a title="Việt Nam Đồng"><b>VNĐ</b></a>
+                        <input type="hidden" name="currency_code" value="" />
+      <input type="hidden" name="redirect" value="http://rausachanhduong.com.vn/index.php?route=error/not_found" />
+    </div>
+  </form>
+    <div id="cart">
+    <div class="heading">
+            <a><span id="cart_total">0 sản phẩm - 0VNĐ</span></a>
+	</div>
+	<div class="heading_ex">
+	  <a href="http://rausachanhduong.com.vn/index.php?route=checkout/cart">Giỏ Hàng</a>
+	  <!--<a href="http://rausachanhduong.com.vn/index.php?route=checkout/checkout">Thanh Toán</a>-->
+	</div>
+    <div class="content"></div>
+  </div>
+  <!--Tìm Kiếm-->
+  <!--Tìm Kiếm-->
+  <div id="welcome">
+        <a href="http://rausachanhduong.com.vn/index.php?route=account/login">Đăng Nhập</a>  |  <a href="http://rausachanhduong.com.vn/index.php?route=account/register">Đăng Kí</a>      </div>
+  <div class="TT-hotro">
+            <a><span id="TT1">Liên hệ đặt hàng (Hotline)</span></a><br>
+			<a><span id="TT2">(84) 09.1722.1626</span></a>
+  </div>
+  <div class="links">
+  <a href="http://rausachanhduong.com.vn/index.php?route=common/home">Trang Chủ</a>
+  <a href="http://rausachanhduong.com.vn/index.php?route=product/newslist&amp;newscat_id=3">Giới thiệu<!--Thông báo--></a>
+  <!--<a href="http://rausachanhduong.com.vn/index.php?route=product/newslist&amp;newscat_id=2">Tin Tức</a>-->
+  <a href="http://rausachanhduong.com.vn/index.php?route=product/newslist&amp;newscat_id=4">Tin tức<!--Dịch vụ--></a>
+  <!--<a href="http://rausachanhduong.com.vn/index.php?route=product/newslist&amp;newscat_id=1">Giải pháp</a>-->
+  <a href="http://rausachanhduong.com.vn/index.php?route=account/wishlist" id="wishlist_total">Wish List (0)</a>
+  <a href="http://rausachanhduong.com.vn/index.php?route=account/account">Tài Khoản</a>
+  </div>
+</div>
+<div id="menu">
+  <ul>
+        <li><a href="http://rausachanhduong.com.vn/cac-loai-rau">Các loại rau</a>
+          </li>
+        <li><a href="http://rausachanhduong.com.vn/cac-loai-cu">Các loại củ</a>
+          </li>
+        <li><a href="http://rausachanhduong.com.vn/cac-loai-qua">Các loại quả</a>
+          </li>
+        <li><a href="http://rausachanhduong.com.vn/Hàng tươi sống">Hàng tươi sống</a>
+          </li>
+        <li><a href="http://rausachanhduong.com.vn/bang-gia-rau-sach-anh-duong">Báo giá</a>
+          </li>
+        <li><a href="http://rausachanhduong.com.vn/huong-dan-mua-hang">Hướng dẫn mua hàng</a>
+          </li>
+        <li><a href="http://rausachanhduong.com.vn/rau-sach-chuyen-cung-cap-rau-sach-HN">Chứng nhận rau sạch</a>
+          </li>
+      </ul>
+  <!--Tìm kiếm added-->
+  <div id="search">   
+        <input type="text" name="filter_name" value="Tìm kiếm" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+    	<div class="button-search"></div>
+  </div>
+  <!--Tìm kiếm added-->
+</div>
+<div id="notification"></div>
+<div class="container"> 
+  <div id="content">    <div class="breadcrumb">
+            <a href="http://rausachanhduong.com.vn/index.php?route=common/home">Trang chủ </a>
+             &raquo; <a href="http://rausachanhduong.com.vn/index.php?route=error/not_found">Trang bạn yêu cầu không tồn tại!</a>
+          </div>
+    <h1>Trang bạn yêu cầu không tồn tại!</h1>
+    <div class="content">Trang bạn yêu cầu không tồn tại!</div>
+    <div class="buttons">
+      <div class="right"><a href="http://rausachanhduong.com.vn/index.php?route=common/home" class="button"><span>Tiếp tục</span></a></div>
+    </div>
+    </div>
+</div>
+<div id="bottom-info"></div>
+</div>
+ <!--<div class="doi-tac"></div>-->
+ <div id="footer-info">
+  <div id="footer">
+	
+    <div class="clearfix" style="width:100%;position:relative;">
+	<div class="column">
+      <h3 class="menu-footer h3left" style="">Thông tin</h3>
+      <ul>
+                <li><a href="http://rausachanhduong.com.vn/rau sach,cung cấp rau an toàn">GIỚI THIỆU ÁNH DƯƠNG (P I)</a></li>
+                <li><a href="http://rausachanhduong.com.vn/index.php?route=information/information&amp;information_id=6">GIỚI THIỆU ÁNH DƯƠNG (P II)</a></li>
+                <li><a href="http://rausachanhduong.com.vn/index.php?route=information/information&amp;information_id=3">Tuyển Nhân viên kinh doanh</a></li>
+                <li><a href="http://rausachanhduong.com.vn/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+              </ul>
+    </div>
+    <div class="column">
+      <h3 class="menu-footer">Chăm sóc khách hàng</h3>
+      <ul>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=information/contact">Liên Hệ</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=account/return/insert">Trả hàng</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=information/sitemap">Sơ đồ trang</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3 class="menu-footer">Chức năng khác</h3>
+      <ul>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=product/manufacturer">Thương hiệu</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=checkout/voucher">Phiếu quà tặng</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=affiliate/account">Affiliates</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=product/special">Khuyến Mãi</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3 class="menu-footer">Tài khoản</h3>
+      <ul>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=account/login">Đăng nhập</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=account/order">Lịch sử đơn hàng</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=account/wishlist">Wish List</a></li>
+        <li><a href="http://rausachanhduong.com.vn/index.php?route=account/newsletter">Thư thông báo</a></li>
+      </ul>
+    </div>
+	<div class="column">
+		<h3 class="menu-footer">Địa chỉ liên hệ</h3>
+		<ul>
+		<li>Công Ty CP Đầu Tư Phát Triển Siêu Thị Ánh Dương </li>
+		<li>Địa chỉ: Số 28/170 Hoàng Ngân - P.Trung Hòa - Q.Cầu Giấy -  Hà Nội</li>
+		<li>Điện thoại: 04 6680 8999 - 0917-221626</li>
+		<li>Email: sieuthianhduong@gmail.com</li>
+		</ul>
+	<div>
+	</div>
+  </div>
+  <!-- End #footer -->
+</div>
+
+<!-- Piwik -->
+
+<!-- End Piwik Code -->
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_floating_style addthis_counter_style" style="left:50px;top:50px;">
+<a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+<a class="addthis_button_tweet" tw:count="vertical"></a>
+<a class="addthis_counter"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f9440c52f06b1b6"></script>
+<!-- AddThis Button END -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56108293-3', 'auto');
+  ga('send', 'pageview');
+
+</script>   
+</body></html>

@@ -1,0 +1,35 @@
+<!-- BEGIN: main -->
+<nav class="clearfix">
+    <div class="container">
+        <div id="main-nav">
+            <form method="get" name="search-form" id="search-form" action="{link_search}">
+            <div id="wrap-nav">
+                <ul class="clearfix">
+                    <li id="mobile-search">
+                        <input type="text" name="q" value="{q}" placeholder="Tìm kiếm" />
+                        <a href="#" onclick="submitForm('#search-form')"><i class="fa fa-search"></i></a>
+                    </li>
+                    <li {active_home}><a href="{link_home}" id="home"><i class="fa fa-home icon-nav icon-home"></i><span>Trang chủ</span></a></li>
+                    <li {active_congthuc}><a href="{link_monngon}"><i class="fa fa-fire icon-nav"></i>Cách làm món ngon</a></li>
+                    <li {active_diadiem}><a href="{link_diadiem}"><i class="fa fa-map-marker icon-nav"></i>Địa điểm ăn ngon</a></li>
+                    <li {active_amthuc}><a href="{link_amthuc}"><i class="fa fa-certificate icon-nav"></i>Ẩm thực cổ truyền</a></li>
+                    <li {active_video}><a href="{link_video}"><i class="fa fa-play-circle icon-nav"></i>Video nấu ăn</a></li>
+                </ul>
+                <div class="txt_coppy_right">
+                    <p>&copy; Copyright 2015 CachNauAnNgon.com, All rights reserved</p>
+                    <p>&reg; CachNauAnNgon không giữ bản quyền nội dung trên website này.</p>
+                    <p style="color: #fff;">Email: cachnauanngon@gmail.com</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <a href="" id="nav-tongle">&nbsp;</a>
+            <input type="submit" style="display: none;" />
+            </form>
+        </div>
+    </div>
+    <a href="#" id="pull">
+        <img src="{skin_path}asset/images/logo_small.png" />
+    </a>
+</nav>
+<div class="clear"></div>
+<!-- END: main -->

@@ -1,0 +1,355 @@
+
+@media (min-width: 1200px) {
+    .container {
+        width:1190px;
+    }
+    #content{
+        width: 839px;
+        float: left
+    }
+    #sidebar{
+        width: 300px;
+        float: right;
+    }
+    #category-menu{
+        width: 200px;
+        float: left;
+    }
+
+    #category-content{
+        width: 939px;
+        float: right;
+    }
+    .container-xs-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-xs-height {
+        display:table-row;
+    }
+    .col-xs-height {
+        display:table-cell;
+        float:none;
+    }
+
+}
+
+@media (min-width: 979px) and (max-width: 1200px) {
+    .container {
+        width:976px;
+    }
+    #content{
+        width: 625px;
+        float: left
+    }
+    #sidebar{
+        width: 300px;
+        float: right;
+    }
+    #category-menu{
+        width: 200px;
+        float: left;
+    }
+    #category-content{
+        width: 725px;
+        float: right;
+    }
+    .col-xs-height{
+        border-right: 1px solid #ccc;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    h1 {
+        font-size:30px;
+    }
+    h2 {
+        font-size:28px;
+    }
+    h3 {
+        font-size:26px !important;
+    }
+    #category-content .category-grid .category-name h3{
+        font-size: 24px;
+    }
+    #content .top-author h3{
+        font-size: 18px !important;
+    }
+    h4, h5, h6 {
+        font-size:22px;
+    }
+    .st-row{
+        margin-left: -20px;
+    }
+
+
+    /* header */
+    header{
+        display: none;
+    }
+    #content{
+        width: 100%;
+    }
+    #sidebar{
+        display: none;
+    }
+
+    #category-menu{
+        display: none;
+    }
+
+    #category-content{
+        width: 100%;
+    }
+    #footer-content #small-content{
+        display: block;
+    }
+    #footer-content #large-content{
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-left:0;
+        padding-right:0;
+        font-size: 16px;
+    }
+    #content .recipe-grid .des h3, 
+    #category-content .category-grid h3, 
+    #home-video .des .title-item,
+    #content .top-author h3{
+        font-size: 30px;
+    }
+    #content .locate-grid .des h3{
+        font-size: 20px;
+    }
+    #home-blog .blog-summary h3,
+    #content .recipe-list .des h3{
+        font-size: 30px;
+    }
+    #category-content .category-grid .category-name h3{
+        font-size: 20px;
+    }
+    #content .top-author h3{
+        font-size: 18px !important;
+    }
+    #home-blog ul li{
+        font-size: 18px;
+    }
+    #video .videoWrapper{
+        margin: 0;
+    }
+    #video .videoWrapper iframe{
+        width: 98%;
+        height: 98%;
+    }
+    /* nav */
+    #main-nav{
+        background-color: #333;
+        left: -240px;
+        width: 240px;
+        position: absolute;
+        top: 0;
+    }
+    nav {
+        border-bottom: 0;
+        z-index: 9999999;
+    }
+    nav ul {
+        border: none;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 40px;
+    }
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+        background-color: #555;
+        border-bottom: 1px solid #484848;
+        border-top: none;
+        border-right: none;
+    }
+    nav li a{
+        color: #fff;
+        font-size: 14px;
+    }
+    nav li:hover, 
+    nav li:hover a,
+    nav li:hover i,
+    nav li.active a{
+        border-top: none !important;
+        color: #fff !important;
+    }
+    nav li .icon-nav{
+        display: inline-block;
+        font-size: 16px;
+    }
+    nav #nav-tongle,
+    nav #mobile-search{
+        display: block;
+    }
+    nav #home span{
+        display: inline-block;
+    }
+    nav #home i{
+        margin-right: 15px;
+    }
+    nav .txt_coppy_right{
+        display: block;
+    }
+    nav ul > li.active, 
+    nav ul > li:hover,
+    nav ul > li.current{
+        background-color: #666;
+        border: none;
+        border-bottom: 1px solid #484848;
+    }
+
+    /* common */
+    #content{
+        width: 100%;
+    }
+    #sidebar{
+        display: none;
+    }
+
+    /* header */
+    header{
+        display: none;
+    }
+
+    /* recipe */
+    #content .recipe-list{
+        width: auto;
+    }
+    #category-menu{
+        display: none;
+    }
+    #category-content{
+        width: 100%;
+    }
+
+    /* footer */	
+    #footer-content #small-content{
+        display: block;
+    }
+    #footer-content #large-content{
+        display: none;
+    }
+    #recipe-detail .recipe-introduction{
+        padding: 5px;
+    }
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    body {
+        padding-left:0px;
+        padding-right:0px;
+    }
+    h1 {
+        font-size:26px;
+    }
+    h2 {
+        font-size:22px;
+    }
+    h3 {
+        font-size:16px;
+    }
+    h4, h5, h6 {
+        font-size:13px;
+    }
+
+    /* nav */
+    #main-nav{
+        background-color: #333;
+        left: -240px;
+        width: 240px;
+        position: absolute;
+        top: 0;
+    }
+    nav {
+        border-bottom: 0;
+        z-index: 9999999;
+    }
+    nav ul {
+        border: none;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    nav{
+        background-color: #fff;
+
+    }
+    nav a#pull {
+        display: block;
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 40px;
+    }
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+        background-color: #555;
+        border-bottom: 1px solid #484848;
+        border-top: none;
+    }
+    nav li a{
+        color: #fff;
+        font-size: 14px;
+    }
+    nav li:hover, 
+    nav li:hover a,
+    nav li:hover i,
+    nav li.active a{
+        border-top: none !important;
+        color: #fff !important;
+    }
+    nav #nav-tongle,
+    nav #mobile-search,
+    nav #home span,
+    nav .txt_coppy_right{
+        display: block;
+    }
+
+
+
+    #content{
+        width: 100%;
+    }
+    #sidebar{
+        display: none
+    }
+
+    #category-menu{
+        display: none;
+    }
+
+    #category-content{
+        width: 100%;
+    }
+    #footer-content #small-content{
+        display: block;
+    }
+    #footer-content #large-content{
+        display: none;
+    }
+}

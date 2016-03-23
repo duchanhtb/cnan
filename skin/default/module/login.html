@@ -1,0 +1,58 @@
+<!-- BEGIN: main -->
+<div id="wrap-user">
+    {html_msg}
+    <div id="other-login">
+        <p class="rg-tip">Đăng ký qua Facebook, Google hoặc Yahoo chỉ với 2 lần click chuột</p>
+        <p><a href="{link_register}" id="btn-register">Đăng ký tài khoản&nbsp;<i class="fa fa-angle-right"></i></a></p>
+        <div id="rg-other">
+            <h3 class="title-rg-other">Hoặc đăng nhập tài khoản với</h3>
+            <ul>
+                <li><a href="#" onclick="openPopup('{login_facebook}', 'Login with Facebook')" id="facebook"><span class="wr-social wr-facebook"><i class="fa fa-facebook"></i></span>Facebook</a></li>
+                <li><a href="#" onclick="openPopup('{login_google}', 'Login with Google')" id="google-plus"><span class="wr-social wr-goolge-plus"><i class="fa fa-google-plus"></i></span>Google</a></li>
+                <!--<li><a href="#" onclick="openPopup('{login_yahoo}', 'Login with Yahoo')" id="yahoo"><span class="wr-social wr-yahoo"><i class="fa fa-yahoo"></i></span>Yahoo</a></li>-->
+            </ul>
+        </div>	
+    </div>
+
+    <div id="login-form">
+        <h2>Đăng nhập</h2>
+        <form method="post" id="user-login-form">
+            <div class="rg-form">
+                <p class="rule">Những thông tin có dấu    <strong class="red" style="font-size: 18px; padding: 0 5px;">*</strong>là bắt buộc nhập</p>
+                <div class="rg-input">
+                    <em class="require_icon">*</em>
+                    <input type="text" name="username" value="" id="lg-username" placeholder="Tên đăng nhập hoặc Email" tabindex="1" />
+                    <div class="arrow_box tipcontent tip-username">Bạn cần nhập thông tin này</div>
+                </div>
+                <div class="rg-input">
+                    <em class="require_icon">*</em>
+                    <input type="password" name="password" value="" id="lg-password" placeholder="Mật khẩu" tabindex="2" />
+                    <div class="arrow_box tipcontent tip-password">Bạn cần nhập thông tin này</div>
+                </div>
+                <!-- BEGIN: captcha -->
+                <div class="rg-input rg-captcha img-captcha">
+                    <img src="{base_url}captcha.php?width=150&amp;height=40&amp;characters=4&r={rand}" id="rg-img-captcha" style="height: 40px;" />
+                    <a href="javascript:void(0)" onclick="reloadCaptcha('#rg-img-captcha', 150, 40, 4)" class="refresh" title="Click để đổi mã bảo vệ khác"><i class="fa fa-refresh"></i></a>
+                    <div class="arrow_box tipcontent tip-captcha">Bạn cần nhập thông tin này</div>
+                </div>
+                <div class="rg-input rg-captcha">
+                    <em class="require_icon">*</em>
+                    <input class="captcha" id="lg-captcha" type="text" name="captcha" value="" tabindex="3" />
+                </div>
+                <!-- END: captcha -->
+                <div class="rg-bottom">
+                    <div class="policy">
+                        <p><a href="{link_forgotpass}">Quên mật khẩu?</a></p>
+                    </div>
+                    <div class="button">
+                        <a href="javascript:void(0)" onclick="submitForm('#user-login-form')">Đăng nhập</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <input type="submit" value="" style="display: none" />
+        </form>
+    </div>
+    <div class="clear"></div>
+</div>
+<!-- END: main -->

@@ -1,0 +1,23 @@
+<!-- BEGIN: main -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <a href="{link_home}" id="logo"><img src="{skin_path}asset/images/logo.png" alt="Cách Nấu Ăn Ngon" /></a>
+            </div>
+            <div class="col-md-5">
+                <form method="get" name="search-form" id="search-form" action="{link_search}">
+                    <div class="post-input">
+                        <input type="text" name="q" value="{q}" placeholder="Nhập nội dung cần tìm" />
+                        <a href="javascript:void(0)" onclick="submitForm('#search-form')" id="icon-search"><i class="fa fa-search"></i></a>
+                    </div>
+                    <input type="submit" style="display: none;" />
+                </form>
+            </div>
+            <div class="col-md-4">
+                {html_user}
+            </div>
+        </div>
+    </div>
+</header> <!-- end header -->
+<!-- END: main -->

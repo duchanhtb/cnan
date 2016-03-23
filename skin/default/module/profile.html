@@ -1,0 +1,178 @@
+<!-- BEGIN: main -->
+<div id="nav-user">
+    <div class="container">
+        <p>Tên đăng nhập: <strong>{login_name}</strong></p>
+    </div>
+</div>
+<div id="profile" class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <ul id="menu-list">
+                <li><a href="#tab-login-info" class="login-info">Thông tin đăng nhập</a></li>
+                <li><a href="#tab-common-info" class="active common-info">Thông tin chung</a></li>
+                <li><a href="#tab-connect-info" class="connect-info">Thông tin kết nối</a></li>
+                <li><a href="#tab-protect" class="protect">Bảo vệ tài khoản</a></li>
+                <li><a href="#tab-recipe" class="recipe">công thức đã đăng</a></li>
+                <li><a href="#tab-location" class="location">Địa điểm chia sẻ</a></li>
+            </ul>
+        </div>
+        <div class="col-md-8" style="border-left: 1px solid #f2f2f2">
+            <div class="wrap-content" id="wr-tab-login-info">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Thông tin đăng nhập
+                    <a class="update" href="javascript:void(0)">Cập nhật</a>
+                </h2>
+                <ul id="common-info" class="content">
+                    <li>
+                        <span>Tên đăng nhập:</span><strong>{username}</strong>
+                    </li>
+                    <li>
+                        <span>Email đăng nhập:</span>{email}
+                    </li>
+                    <li>
+                        <span>Số đt đăng nhập:</span>{phone}
+                    </li>
+                    <li>
+                        <span>Mật khẩu:</span>******
+                        <a class="update" href="">Đổi mật khẩu</a>
+                    </li>
+                </ul>
+            </div> <!-- end login info -->
+
+            <div class="wrap-content" id="wr-tab-common-info">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Thông tin cá nhân
+                    <a class="update" href="">Cập nhật</a>
+                </h2>
+                <ul id="common-info" class="content">
+                    <li>
+                        <span>Họ tên:</span><strong>{fullname}</strong>
+                    </li>
+                    <li>
+                        <span>Giới tính:</span>{gender}
+                    </li>
+                    <li>
+                        <span>Ngày sinh:</span> {birthday}
+                    </li>
+                    <li>
+                        <span>Địa chỉ:</span> {address}
+                    </li>
+                    <li>
+                        <span>Thành phố:</span> {province}
+                    </li>
+                    <li>
+                        <span>Nghề nghiệp:</span> {career}
+                    </li>
+                </ul>
+            </div>  <!-- end common info -->
+
+            <div class="wrap-content" id="wr-tab-connect-info">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Kết nối tài khoản
+                </h2>
+                <ul id="connect-info" class="content">
+                    <li>
+                        <span>Facebook:</span><a href="">Kết nối</a>
+                    </li>
+                    <li>
+                        <span>Google</span><a href="">Kết nối</a>
+                    </li>
+                    <li class="no-border">
+                        <span>Yahoo</span><a href="">Kết nối</a>
+                    </li>
+                </ul>
+            </div>  <!-- end connect info -->
+
+            <div class="wrap-content" id="wr-tab-protect">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Thông tin bảo vệ
+                </h2>
+                <ul id="common-info" class="content">
+                    <li>
+                        <span>Email bảo vệ:</span><span style="letter-spacing: 2px;">{email_protect}</span>
+                        <a class="update" href="">Cập nhật</a>
+                    </li>
+                    <li>
+                        <span>Câu hỏi bảo vệ:</span>{question}
+                        <a class="update" href="">Cập nhật</a>
+                    </li>
+                    <li>
+                        <span>Trả lời:</span>{answer}
+                        <a class="update" href="">Đổi câu trả lời</a>
+                    </li>
+                </ul>
+            </div> <!-- end protect -->
+
+            <div class="wrap-content" id="wr-tab-recipe">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Công thức đã đăng
+                    <a href="{link_share_recipe}" class="post-button">Chia sẻ công thức</a>
+                </h2>
+                {first_share_recipe}
+
+                <!-- BEGIN: recipe -->
+                <div class="row recipe-list">
+                    <div class="col-md-4 col-sm-6">
+                        <a class="thumb" href="{recipe_link}" target="_blank">
+                            <img alt="{recipe_title}" src="{recipe_img}" class="img-responsive" />
+                            {recipe_cooking_time}
+                        </a>
+                    </div>
+                    <div class="col-md-8 des">
+                        <h3 class="title-item txt-primary">
+                            <a href="{recipe_link}" target="_blank">{recipe_title}</a>
+                        </h3>
+                        <p>{recipe_intruction}</p>
+                        <div class="author">
+                            <h4>
+                                <a href="{recipe_link}" target="_blank">Đăng: {recipe_date}</a>
+                                <a href="{recipe_edit_link}" class="update" target="_blank">Sửa bài viết</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="break-line"></div>
+                <!-- END: recipe -->
+                {paging_recipe}
+
+                
+            </div>  <!-- end recipe -->
+
+            <div class="wrap-content" id="wr-tab-location">
+                <h2 class="heading">
+                    <i class="fa fa-play-circle"></i>Địa điểm đã đăng
+                    <a href="{link_share_location}" class="post-button">Chia sẻ địa điểm</a>
+                </h2>
+                <div class="user-location">
+                    {first_share_locate}
+                    <!-- BEGIN: locate -->
+                    <div class="row recipe-list">
+                        <div class="col-md-4 col-sm-6">
+                            <a class="thumb" href="{locate_link}" target="_blank">
+                                <img alt="{locate_name}" src="{locate_img}" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-md-8 des">
+                            <h3 class="title-item txt-primary">
+                                <a href="{locate_link}" target="_blank">{locate_name}</a>
+                            </h3>
+                            <p>{locate_brief}</p>
+                            <div class="author">
+                                <h4>
+                                    <a href="{locate_gmap}" class="iframe-colorbox locate"><i class="fa fa-map-marker"></i>Bản đồ</a>
+                                    <a href="{locate_link}" target="_blank">Đăng: {locate_date}</a>
+                                    <a href="{locate_edit_link}" class="update">Sửa bài viết</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="break-line"></div>
+                    <!-- END: locate -->
+                    {paging_locate}
+                </div>
+            </div>  <!-- end location -->
+
+        </div>
+    </div>
+</div>
+<!-- END: main -->

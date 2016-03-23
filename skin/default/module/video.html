@@ -1,0 +1,56 @@
+<!-- BEGIN: main -->
+<section>
+    <div class="container wrap-content">
+        <div class="home-content" id="content">
+            <div id="list-video">
+                <h1 class="title-section"><a href="javascript:void(0)">Video mới nhất</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    <!-- BEGIN: video -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 locate-grid">
+                        <a href="{link}" class="thumb video" data-youtube-id="{youtube_id}">
+                            <img class="img-responsive" src="{img}" alt="{name}" />
+                            <div class="icon-view"><i class="fa fa-play"></i></div>
+                            <div class="des">
+                                <h3 class="title-item txt-primary">{name}</h3>
+                            </div>
+                            
+                            <span class="item-mask"></span>
+                        </a>
+                    </div>
+                    <!-- END: video -->
+                </div>
+                {paging}
+                <div class="clear"></div>
+
+                <h1 class="title-section section"><a href="javascript:void(0)">Video hot nhất</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    <!-- BEGIN: hot_video -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 locate-grid">
+                        <a href="{hot_link}" class="thumb video" data-youtube-id="{hot_youtube_id}">
+                            <img class="img-responsive" src="{hot_img}" alt="{hot_name}">
+                            <div class="icon-view"><i class="fa fa-play"></i></div>
+                            <div class="des">
+                                <h3 class="title-item txt-primary">{hot_name}</h3>
+                            </div>
+                            <span class="item-mask"></span>
+                        </a>
+                    </div>
+                    <!-- END: hot_video -->
+                </div>
+            </div> <!-- end recipe grid -->
+        </div>    
+
+        <div id="sidebar">
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+
+            {facebook}
+            
+        </div> <!-- end side bar -->
+    </div>
+    <div class="clearfix"></div>
+</section>
+<!-- END: main -->

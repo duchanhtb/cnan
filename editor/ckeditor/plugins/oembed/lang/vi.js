@@ -1,0 +1,23 @@
+CKEDITOR.plugins.setLang('oembed', 'vi', {
+	title: "Nhúng nội dung Media (Ảnh, Video, Âm thanh hoặc Nội dung đa phương tiện)",
+    button: "Nhúng media từ một website thứ ba",
+    pasteUrl: "Dán URL (Bao gồm cả URL rút gọn) từ một trong những trang web được hỗ trợ (ví dụ như YouTube, Flickr, Qik, Vimeo, Hulu, Viddler, myopera, v.v).",
+    invalidUrl: "Vui lòng cung cấp một URL hợp lệ",
+    noEmbedCode: "Không tìm thấy mã nhúng, hoặc trang web không được hỗ trợ.",
+    url: "URL:",
+    width: "Chiều rộng:",
+    height: "Chiều cao:",
+    widthTitle: "Chiều rộng về nội dung được nhúng",
+    heightTitle: "Chiều cao về nội dung được nhúng",
+    maxWidth: "Chiều rộng tối đa:",
+    maxHeight: "Chiều cao tối đa:",
+    maxWidthTitle: "Chiều rộng tối đa nội dung được nhúng",
+    maxHeightTitle: "Chiều cao tối đa nội dung được nhúng",
+	none:"None",
+    resizeType: "Thay đổi kích thước(chỉ Video):",
+    noresize: "Không thay đổi kích thước (mặc định)",
+    responsive: "Thay đổi kích thước theo màn hình hiển thị",
+    custom: "Thay đổi kích thước tùy biến",
+    noVimeo: "Chủ sở hữu của video này đã đặt các hạn chế và bạn sẽ không thể nhúng nó vào trang web của bạn.",
+    Error: "Nội dung Media không thể được lấy ra, hãy thử một URL khác."
+});

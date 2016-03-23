@@ -1,0 +1,61 @@
+<!-- BEGIN: main -->
+<section>
+    <div class="container wrap-content">
+        <div class="home-content" id="content">
+            <div id="home-recipe-grid">
+                <h1 class="title-section"><a href="javascript:void(0)">Địa điểm mới</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    <!-- BEGIN: locate -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 locate-grid">
+                        <a href="{link}" class="thumb">
+                            <img class="img-responsive" src="{img}" alt="{name}" >
+                            <div class="icon-view"><i class="fa fa-angle-double-right"></i></div>
+                            <div class="des">
+                                <h3 class="title-item txt-primary">{name}</h3>
+                                {html_address}
+                            </div>
+                            {html_locate}
+                            <span class="item-mask"></span>
+                        </a>
+                    </div>
+                    <!-- END: locate -->
+                </div>
+                {paging}
+            </div> <!-- end recipe grid -->
+
+
+            <div id="home-recipe-other" class="section">
+                <h1 class="title-section"><a href="javascript:vod(0)">Địa điểm gần bạn</a><i class="fa fa-angle-right"></i></h1>
+                <div class="row">
+                    <!-- BEGIN: near_locate -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 locate-grid">
+                        <a href="{near_link}" class="thumb">
+                            <img class="img-responsive" src="{near_img}" alt="{near_name}" >
+                            <div class="icon-view"><i class="fa fa-angle-double-right"></i></div>
+                            <div class="des">
+                                <h3 class="title-item txt-primary">{near_name}</h3>
+                                {html_near_address}
+                            </div>
+                            <span class="item-mask"></span>
+                        </a>
+                    </div>
+                    <!-- END: near_locate -->
+                </div>
+            </div> <!-- end recipe grid -->
+        </div>
+
+        <div id="sidebar">
+
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+            
+            {facebook}
+
+        </div> <!-- end side bar -->
+    </div>
+    <div class="clearfix"></div>
+</section>
+<!-- END: main -->

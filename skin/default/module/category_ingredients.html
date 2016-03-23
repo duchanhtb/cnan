@@ -1,0 +1,75 @@
+<!-- BEGIN: main -->
+<section>
+    <div class="container wrap-content">
+        <div class="home-content" id="content">
+            <div id="home-recipe-list">
+                <h1 class="title-section">
+                    <a href="javascript:void(0)">{heading}</a><i class="fa fa-angle-right"></i>
+                </h1>
+                <!-- BEGIN: recipe -->
+                <div class="row recipe-list">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a class="thumb" href="{recipe_link}"><img alt="{recipe_name}" class="img-responsive" src="{recipe_img}" title="{recipe_name}" />
+                            {recipe_cooking_time}
+                        </a>
+                    </div>
+                    <div class="col-md-8 des">
+                        <h3 class="title-item txt-primary">
+                            <a href="{recipe_link}">{recipe_name}</a>
+                        </h3>
+                        <p>{recipe_intruction}</p>
+                        <div class="author">
+                            <h4>
+                                <a href="{recipe_author_link}">{recipe_author}<span class="view"><i class="fa fa-heart-o"></i>{recipe_point}</span></a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="break-line"></div>
+                <!-- END: recipe -->
+
+                {paging}
+
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="other-ingredients section">
+                <h1 class="title-section">
+                    <a href="{link_nguyenlieu}">Những nguyên liệu khác</a><i class="fa fa-angle-right"></i>
+                </h1>
+                <div class="row">
+                    <!-- BEGIN: ingridient -->
+                    <div class="col-md-3 col-sm-4 col-xs-6 recipe-grid ingredient-grid">
+                        <a class="thumb" href="{ingridient_link}">
+                            <img alt="{ingridient_name}" data-id="{ingridient_id}" data-name="{ingridient_name}" class="img-responsive {gimage}" src="{ingridient_img}" title="{ingridient_name}">
+                            <div class="icon-view"><i class="fa fa-angle-double-right"></i></div>
+                            <div class="des">
+                                <h3 class="title-item txt-primary">
+                                    Món ăn từ {ingridient_name}
+                                </h3>
+                            </div><span class="item-mask"></span>
+                        </a>
+                    </div>
+                    <!-- END: ingridient -->
+                </div>
+                <div class="more-ingredients">
+                    <a href="{link_nguyenlieu}">Xem nhiều hơn nữa &gt;&gt;</a>
+                </div>
+            </div>
+
+        </div><!-- end content -->
+        <div id="sidebar">
+
+            {ads}
+
+            {recipe_hot}
+
+            {top_location}
+
+            {facebook}
+
+        </div><!-- end side bar -->
+    </div>
+    <div class="clearfix"></div>
+</section>
+<!-- END: main -->

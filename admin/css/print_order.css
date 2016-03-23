@@ -1,0 +1,19 @@
+body{ background:#EDEDE7;}
+h1,h2,h3,h4,h5,h6 { font-family:Arial, Helvetica, sans-serif; margin:0; padding:0;}
+h1{ font-size:2em;}
+h3{ font-size:13px;}
+a{color:#4D9BB3; text-decoration:none; outline:none;}
+a:hover{ text-decoration:underline;}
+input, select, textarea{font-size:100%; font-family: Arial, Helvetica, sans-serif;}
+ul{list-style:none outside none;}
+dl dd{margin:0 0 5px 0;}
+
+.orderPrint{width:750px; background:#fff; text-align:center; overflow:hidden;}
+.orderPrint h1{ margin:24px 0 5px 0 !important;}
+.orderPrint p{ margin:0 !important;}
+.orderPrint table{ margin:15px 0; background:#fff; border:none !important; width:100% !important; border-collapse:collapse; table-layout:auto !important; text-align: left;}
+.orderPrint table tbody th{ border:1px solid #ccc; background:#eee; text-align:center;}
+.orderPrint table td{ border:1px solid #ccc !important; padding:8px !important;}
+.orderPrint table td span{ padding-left:30px;}
+.orderPrint table .signature{ padding-bottom:60px !important; text-align:center;}
+.orderPrint table .signature b{ padding:0 130px;}

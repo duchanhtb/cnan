@@ -1,0 +1,345 @@
+/* prettyCheckable.css */
+.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}.prettycheckbox,.prettyradio{display:inline-block;padding:0;margin:0}.prettycheckbox>a,.prettyradio>a{height:30px;width:30px;display:block;float:left;cursor:pointer;margin:0;background:url('../images/sprites-sfa68604977.png')}.prettycheckbox>a:focus,.prettyradio>a:focus{outline:0 none}.prettycheckbox label,.prettyradio label{display:block;float:left;margin:6px 5px;cursor:pointer}.prettycheckbox a.disabled,.prettycheckbox label.disabled,.prettyradio a.disabled,.prettyradio label.disabled{cursor:not-allowed}.prettycheckbox>a{background-position:0 0}.prettycheckbox>a:focus{background-position:-30px 0}.prettycheckbox>a.checked{background-position:-60px 0}.prettycheckbox>a.checked:focus{background-position:-90px 0}.prettycheckbox>a.checked.disabled{background-position:-150px 0}.prettycheckbox>a.disabled{background-position:-120px 0}.prettyradio>a{background-position:-180px 0}.prettyradio>a:focus{background-position:-210px 0}.prettyradio>a.checked{background-position:-240px 0}.prettyradio>a.checked:focus{background-position:-270px 0}.prettyradio>a.checked.disabled{background-position:-330px 0}.prettyradio>a.disabled{background-position:-300px 0}
+#post-form img{
+    max-width: none;
+}
+#post-form textarea,
+#post-form input,
+#post-form select{
+    font-size: 14px;
+}
+#post-form{
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 40px;  
+    max-width: 800px;
+}
+#post-form .wrap-post{
+    background-color: #f6f6f6;
+    border: 1px solid #e2e2e2;
+    padding: 15px 20px;
+}
+#post-form .post-row{
+    margin-bottom: 20px;
+}
+#post-form .line{
+    margin: 40px 0px;
+    border-bottom: 1px solid #e9e9d4;
+}
+#post-form .heading{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#post-form .rule{
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #333;
+}
+#post-form .require{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+#post-form .error{
+    font-size: 14px;
+}
+#post-form .post-input{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
+#post-form .require_icon{
+    font-size: 30px;
+    position: absolute;
+    right: 8px;
+    top: 12px;    
+}
+#post-form input,
+#post-form textarea{
+    border: medium none;
+    padding-right: 20px;
+    width: 100%;
+}
+#post-form input[type='radio']{
+    height: 15px;
+}
+#post-form textarea{
+    padding: 10px;
+}
+#post-form label{
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+#post-form select{
+    padding: 5px;
+    border: 1px solid #e9e9d4;
+    width: 200px;
+}
+#post-form .title{
+    width: 70% !important;
+}
+.ingredient{
+    width: 100%;
+}
+.ingredient input{
+    display: inline-block;
+}
+.ingredient .ingredient-name{
+    width: 200px !important;
+    float: left;
+    margin-right: 10px;
+}
+.ingredient .ingredient-value{
+    width: 120px !important; 
+    margin-right: 10px;
+    float: left;
+}
+.red{
+    color: #f21616;
+}
+#post-form .button{
+    margin: 0;
+    width: 100px;
+    padding: 0 !important;
+}
+#post-form .button a{
+    display: block;
+    width: 100%;
+    line-height: 32px;
+    height: 32px;
+    font-weight: bold;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    background: -webkit-linear-gradient(#449bd3, #1579ba); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#449bd3, #1579ba); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#449bd3, #1579ba); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#449bd3, #1579ba); /* Standard syntax */
+    border-radius: 5px;
+}
+#post-form .button a:hover{
+    background: -webkit-linear-gradient(#48AFF2, #1A95E5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#48AFF2, #1A95E5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#48AFF2, #1A95E5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#48AFF2, #1A95E5); /* Standard syntax */
+}
+#post-form  .fl{
+    float: left;
+}
+#post-form .break{
+    margin: 20px 0;
+    border-bottom: 1px solid #e9e9d4;
+}
+#post-form .cooking-time{
+    width: 200px;
+}
+#cooking-time span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.w100{
+    width: 100px !important;
+    display: inline-block;
+}
+.w150{
+    width: 150px !important;
+    display: inline-block;
+}
+.w200{
+    width: 200px !important;
+    display: inline-block;
+}
+.w300{
+    width: 300px !important;
+    display: inline-block;
+}
+#recipe-category .prettycheckbox {
+    display: block;
+}
+#recipe-category label{
+    font-size: 14px;
+}
+#recipe-category .group{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 8px 5px;
+}
+#post-images #img-preview{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+    width: 120px;
+}
+#post-images .button{
+    float: left; 
+    margin: 25px 0px 0px 10px;	
+}
+#thumbnails{
+    margin: 0px;
+    padding-left: 0px;
+}
+#thumbnails li{
+    list-style: none;
+    padding: 2px 0px;
+    margin-right: 8px;
+    float: left;
+    position: relative;
+} 
+#thumbnails .progress {
+    background: none repeat scroll 0 0 #ddd;
+    border-radius: 22px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    float: right;
+    height: 10px;
+    line-height: 10px;
+    margin: -3px 0px 0px 0px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+#thumbnails .percent {
+    color: #fff;
+    line-height: 10px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+#thumbnails .bar {
+    background-color: #0074a2;
+    border-radius: 22px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+    height: 100%;
+    width: 0;
+    z-index: 9;
+}
+#thumbnails img{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.wrap-process {
+  height: 106px;
+  left: 7px;
+  position: absolute;
+  top: 6px;
+  width: 106px;
+}
+#drop input{
+    display: none;
+}
+#drop {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #7f858a;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+}
+#drop a {
+    -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s;
+    color: #7f858a;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: none;
+    display: block;
+    height: 120px;
+    line-height: 120px;
+    text-decoration: none;
+}
+#drop a:hover{
+    color: #000;
+}
+.rwmb-image-bar {
+    transition: all 0.3s ease-out 0s;
+    color: #fff;
+    font-weight: bold;
+    background: #000;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 8px;
+    right: 6px;
+    padding: 0 5px;
+    display: none;
+    text-align: center;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=50);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:0.5;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0.5;
+
+    /* Modern!
+    /* Firefox 0.9+, Safari 2?, Chrome any?
+    /* Opera 9+, IE 9+ */
+    opacity: 0.5;
+}
+li:hover .rwmb-image-bar, .wrap-images:hover .rwmb-image-bar{
+    display: block;
+}
+.rwmb-image-bar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.rwmb-image-bar a.rwmb-delete-file {
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: normal;
+
+}
+.rwmb-images li.removed {
+    width: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0;
+}
+.rwmb-images li.removed:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: .4;
+    background-color: #f00;
+}
+.bottom-40{
+    margin-bottom: 40px;
+}
